@@ -44,8 +44,8 @@ export default function Form2({ isVisible, onClose }) {
   const prefixSelector = (
     <Form.Item name="prefix" noStyle>
       <Select style={{ width: 70 }}>
-        <Option value="86">+86</Option>
-        <Option value="87">+87</Option>
+        <Option value="57">+57</Option>
+        <Option value="56">+56</Option>
       </Select>
     </Form.Item>
   );
@@ -78,7 +78,7 @@ export default function Form2({ isVisible, onClose }) {
             form={form}
             name="register"
             onFinish={onFinish}
-            initialValues={{ prefix: "86" }}
+            initialValues={{ prefix: "57" }}
             style={{ maxWidth: 600, margin: 20 }}
             scrollToFirstError
           >

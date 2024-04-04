@@ -27,7 +27,9 @@ module.exports = {
         azulOscuroInicio: '#A4BDF8',
         aguaMarina: '#A4F8F8',
         verdeButtom: '#35FF9E',
-        texto:'#6F6F6F'
+        texto:'#6F6F6F',
+        card3: '#E5F5F9',
+        card4: '#FDEEC4',
       },
     },
   },
