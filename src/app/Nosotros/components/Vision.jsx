@@ -23,7 +23,7 @@ const Vision = ({ description, title, image }) => {
     return (
         <div
         ref={visionCartRef}
-             className={`flex flex-col justify-between items-center border-2 bg-[#424245] rounded-[50px]  p-8 hover:animate-pulse transition-opacity duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+             className={`flex flex-col justify-between items-center  bg-[#424245] rounded-[50px]  p-8 hover:animate-pulse transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
             }`}>
 
             <div className="mb-4 bg-[#292930] rounded-[100%] w-20 h-20 flex items-center justify-center">

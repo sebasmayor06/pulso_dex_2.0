@@ -14,7 +14,7 @@ const VisionCart = () => {
     return (
         <div
           
-            className={`flex flex-col justify-center gap-20 items-center bg-[#B9CEFF] w-full h-full md:px-2 md:py-16  `}
+            className="flex flex-col justify-center gap-20 items-center bg-[#B9CEFF] w-full h-full md:px-2 md:py-16"
         >
             <h1 className="text-3xl text-center px-52 md:text-6xl md:font-medium text-[#292930]">
                 Los ejes fundamentales de nuestra visión.
