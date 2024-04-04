@@ -21,7 +21,7 @@ export default function Navbar({setShowModal2}) {
             <div className="hidden md:block">
               <div className="ml-4 flex items-center space-x-4">
                 <a
-                  href="/"
+                  href="/Soluciones"
                   className="text-black hover:bg-black hover:text-white rounded-lg p-2"
                 >
                   Soluciones

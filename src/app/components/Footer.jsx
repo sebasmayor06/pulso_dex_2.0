@@ -30,9 +30,9 @@ export default function Footer() {
           </li>
         </ul>
         <ul>
-          <li className="text-gray-500  pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+          <a href="/Soluciones" className="text-gray-500  pb-2 font-semibold hover:text-blue-600 cursor-pointer">
             SOLUCIONES
-          </li>
+          </a>
         </ul>
         <ul className="flex  items-center flex-col">
           <p className="text-gray-500  pb-2 font-semibold text-xl">Síguenos</p>
