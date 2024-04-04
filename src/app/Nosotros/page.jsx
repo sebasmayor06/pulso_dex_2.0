@@ -7,7 +7,7 @@ export default function page() {
   return (
     <div>
       {/* landing */}
-      <div className=" bg-black ">
+      <div className=" bg-black md:h-screen">
         <Landing />
       </div>
       <div className="" >

@@ -1,8 +1,30 @@
+"use client"
 import Image from "next/image";
+import { useState, useEffect, useRef } from 'react';
 
 const Vision = ({ description, title, image }) => {
+    const [isVisible, setIsVisible] = useState(false);
+    const visionCartRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const bounding = visionCartRef.current.getBoundingClientRect();
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            const isVisible = bounding.top < windowHeight * 0.9;
+            setIsVisible(isVisible);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Verifica la visibilidad inicial
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
-        <div className="flex flex-col justify-between items-center border-2 bg-[#424245] rounded-[50px]  p-8">
+        <div
+        ref={visionCartRef}
+             className={`flex flex-col justify-between items-center border-2 bg-[#424245] rounded-[50px]  p-8 hover:animate-pulse transition-opacity duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+            }`}>
 
             <div className="mb-4 bg-[#292930] rounded-[100%] w-20 h-20 flex items-center justify-center">
                 <Image

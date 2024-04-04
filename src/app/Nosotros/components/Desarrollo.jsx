@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Desarrollo = () => {
     return (
-        <div className="my-12 flex flex-col gap-10 items-center justify-center">
+        <div className="h-screen flex flex-col gap-10 items-center justify-center">
             <h1 className="text-3xl text-center  md:text-6xl md:font-medium text-[#292930] ">Desarrollo sostenible y tecnología</h1>
             <div className="bg-[#B9E6FF] rounded-[50px] md:max-w-5xl">
                 <div className="p-12 flex gap-10 items-center  ">

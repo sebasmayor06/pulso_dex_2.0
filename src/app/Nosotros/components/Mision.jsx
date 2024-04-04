@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Mision = () => {
     return (
-        <div className="flex justify-center items-center py-24 ">
+        <div className="flex justify-center items-center h-screen ">
             <div className=" flex flex-col   md:flex-row  gap-20 md:max-w-5xl ">
                 <div className="border-2 border-black rounded-[12%] overflow-hidden w-full md:w-[120rem] ">
                     <Image
