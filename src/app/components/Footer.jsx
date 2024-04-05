@@ -19,14 +19,23 @@ export default function Footer() {
       </div>
       <div className="flex flex-row gap-3 md:gap-32">
         <ul>
-          <li className="text-gray-500  pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-            INICIO{" "}
+          <li>
+
+        <a href="/" className="text-gray-500  pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+            INICIO
+          </a>
           </li>
-          <li className="text-gray-500 pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-            NOSOTROS{" "}
+          <li>
+
+          <a href="/Nosotros" className="text-gray-500  pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+            NOSOTROS
+          </a>
           </li>
-          <li className="text-gray-500  pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-            AYUDA{" "}
+          <li>
+
+          <a href="/Ayuda" className="text-gray-500  pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+            AYUDA
+          </a>
           </li>
         </ul>
         <ul>

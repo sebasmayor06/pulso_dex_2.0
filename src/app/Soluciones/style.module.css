@@ -99,3 +99,8 @@
     background-image: url('/Pattern.png'); /* ruta de la imagen */
     background-size: cover; /* ajusta el tamaño de la imagen */
 }
+
+.bg1{
+    background: rgb(185,206,255);
+    background: linear-gradient(108deg, rgba(185,206,255,0.9585084033613446) 34%, rgba(53,255,158,1) 100%);
+}

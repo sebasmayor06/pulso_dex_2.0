@@ -8,7 +8,7 @@ const Desarrollo = () => {
                 <div className="p-12 flex gap-10 items-center  ">
                     <div className="">
                         <Image
-                            src="/desarrollo/perfil.png"
+                            src="/perfil.png"
                             alt="Imagen de desarrollo"
                             width={600}
                             height={600}
