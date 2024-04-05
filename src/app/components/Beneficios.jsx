@@ -76,11 +76,7 @@ export default function Beneficios() {
                         className="rounded-[10%] ml-7"
                         />
                         <span className="font-bold text-xs md:text-lg overflow-hidden w-44">Acceso a informes de ventas</span>
-                    </div>
-                   
-
-                    
-                    
+                    </div>   
             </div>
           </div>
         </div>

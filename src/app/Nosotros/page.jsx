@@ -1,7 +1,24 @@
-export default function page () {
+import Desarrollo from "./components/Desarrollo";
+import Landing from "./components/Landing";
+import Mision from "./components/Mision";
+import VisionCart from "./components/VisionCart";
+
+export default function page() {
   return (
     <div>
-        <h1>Page Nosotros</h1>
+      {/* landing */}
+      <div className=" bg-black md:h-screen">
+        <Landing />
+      </div>
+      <div className="" >
+        <Mision/>
+      </div>
+      <div >
+        <VisionCart/>
+      </div>
+      <div>
+        <Desarrollo/>
+      </div>
     </div>
   )
 }

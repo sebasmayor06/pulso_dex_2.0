@@ -6,6 +6,12 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -30,6 +36,15 @@ module.exports = {
         texto:'#6F6F6F',
         card3: '#E5F5F9',
         card4: '#FDEEC4',
+      },
+      animation: {
+        slideInUp: 'slideInUp 1s ease-out forwards',
+      },
+      keyframes: {
+        slideInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
     },
   },
