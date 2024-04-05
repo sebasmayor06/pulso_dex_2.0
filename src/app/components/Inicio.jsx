@@ -4,7 +4,7 @@ import React from "react";
 export default function Inicio({setShowModal2}) {
   return (
     <div className="overflow-x-hidden shadow-xl bg-azulInicio md:p-8">
-      <div className="inicio flex flex-col md:flex-row w-screen h-screen md:h-[700px] top-67px overflow-hidden left-0 bg-azulInicio  gap-5 md:gap-0">
+      <div className="inicio flex flex-col md:flex-row w-screen h-screen  top-67px overflow-hidden left-0 bg-azulInicio  gap-5 md:gap-0">
         <div className="flex flex-col justify-center items-center h-1/2 md:h-full md:w-1/2 w-full pl-4 pr-4">
           <div className="w-full h-1/2 flex justify-center items-center md:ml-14 md:mb-0 mb-10 md:mt-0 mt-10">
             <span className="text-4xl md:text-7xl font-bold text-center md:text-left">
