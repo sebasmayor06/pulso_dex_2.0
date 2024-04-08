@@ -1,8 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-export default function Navbar({setShowModal2}) {
+import Link from 'next/link'
+import Form from "./Form2";
+
+export default function Navbar() {
   const [isClick, setIsClick] = useState(false);
+  const [showModal, setShowModal] = useState(false)
 
   const toogleNavbar = () => {
     setIsClick(!isClick);
@@ -52,7 +56,7 @@ export default function Navbar({setShowModal2}) {
               >
                 Comienza gratis
               </span>
-              <button onClick={()=>setShowModal2()} className="bg-black rounded-lg text-white p-2 hover:bg-verdeButtom hover:text-black font-bold">
+              <button onClick={()=>setShowModal(true)} className="bg-black rounded-lg text-white p-2 hover:bg-verdeButtom hover:text-black font-bold">
                 Agenda Demo
               </button>
             </div>
@@ -100,42 +104,43 @@ export default function Navbar({setShowModal2}) {
         {isClick && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a
+            <Link
                 href="/"
                 className="text-black block hover:bg-black hover:text-white rounded-lg p-2"
               >
                 Inicio
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/Soluciones"
                 className="text-black block hover:bg-black hover:text-white rounded-lg p-2"
               >
                 Soluciones
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/Ayuda"
                 className="text-black block hover:bg-black hover:text-white rounded-lg p-2"
               >
                 Ayuda
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/Nosotros"
                 className="text-black block hover:bg-black hover:text-white rounded-lg p-2"
               >
                 Nosotros
-              </a>
+              </Link>
               <span
                 className="text-black rounded-lg p-2"
               >
                 Comienza gratis
               </span>
-              <button onClick={()=>setShowModal2()} className="bg-black rounded-lg text-white p-2 hover:bg-verdeButtom hover:text-black">
+              <button onClick={()=>setShowModal(true)} className="bg-black rounded-lg text-white p-2 hover:bg-verdeButtom hover:text-black">
                 Agendar Demo
               </button>
             </div>
           </div>
         )}
       </nav>
+      <Form isVisible={showModal} onClose={()=>setShowModal(false)}></Form>
     </>
   );
 }

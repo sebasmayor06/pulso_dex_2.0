@@ -20,7 +20,9 @@ export default function Cohete() {
                 </h1>
             </div>
             <div className='flex justify-center items-center w-1/2 '>
-                <button className='p-4 bg-inherit border-4 border-black rounded-full hover:bg-verdeButtom hover:bg-opacity-40 font-bold '>Comprar Franquicia</button>
+                <button className='p-4 bg-inherit border-4 border-black rounded-full hover:bg-verdeButtom hover:bg-opacity-40 font-bold '>
+                    <a href="/Franquicia">Comprar Franquicia</a>
+                </button>
             </div>
         </div>
     </div>

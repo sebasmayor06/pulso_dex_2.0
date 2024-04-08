@@ -63,12 +63,7 @@ export default function Form2({ isVisible, onClose }) {
             : "hidden"
         }  `}
       >
-        <button
-          className="text-black text-xl place-self-end border-2 border-black/50 w-8 "
-          onClick={() => onClose()}
-        >
-          x
-        </button>
+        
         <div className="bg-white text-black p-4 rounded">
           <span className="font-bold">
             Agenda una cita y experimenta el potencial del comercio electrónico
@@ -117,15 +112,20 @@ export default function Form2({ isVisible, onClose }) {
               <Input addonBefore={prefixSelector} style={{ width: "100%" }} />
             </Form.Item>
 
-            <Form.Item {...tailFormItemLayout}>
+            <Form.Item {...tailFormItemLayout} >
+              <div className="flex flex-row justify-between items-center">
+                
               <Button
-                className="bg-verdeInicio"
+                className=" bg-verdeButtom text-black font-semibold"
                 type="primary"
                 htmlType="submit"
                 loading={loading}
               >
                 {loading ? "Loading" : "Register"}
               </Button>
+              <Button onClick={()=>onClose()} className="bg-red-500 text-black font-semibold hover:bg-red-300 ">Cerrar</Button>
+              </div>
+              
             </Form.Item>
           </Form>
         </div>
