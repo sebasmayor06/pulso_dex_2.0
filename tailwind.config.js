@@ -15,10 +15,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "gradient-purple":
-          "linear-gradient(90deg, rgba(103,73,214,0.4) 0%, rgba(121,9,117,0.3) 26%, rgba(220,255,74,0.3066001400560224) 41%, rgba(57,184,72,0.6362920168067228) 71%, rgba(14,139,0,0.3) 100%)",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-purple": "linear-gradient(90deg, rgba(103,73,214,0.4) 0%, rgba(121,9,117,0.3) 26%, rgba(220,255,74,0.3066001400560224) 41%, rgba(57,184,72,0.6362920168067228) 71%, rgba(14,139,0,0.3) 100%)",
+        "gradient-nosotros-landing-fondo": "radial-gradient(circle, #b9e6ff, #b9e6ff, #b9e6ff, #b9e6ff, #b9e6ff, #bee4fd, #c3e3fb, #c8e1f8, #d1def1, #d6dbe9, #d9dae1, #d9d9d9)",
+        // Eliminé el background:
       },
       height: {
         "700px": "700px",

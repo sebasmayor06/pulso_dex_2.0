@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Desarrollo = () => {
+const Desarrollo = ({ setShowModal2 }) => {
     return (
         <div className="h-screen flex flex-col gap-10 items-center justify-center">
             <h1 className="text-3xl text-center  md:text-6xl md:font-medium text-[#292930] ">Desarrollo sostenible y tecnología</h1>
@@ -15,7 +15,7 @@ const Desarrollo = () => {
                             className=" rounded-[12%] w-[120rem]"
                         />
                     </div>
-                    <div> 
+                    <div>
                         <p className="text-[#6F6F6F]  md:text-xl  mb-8">
                             Pulso Dex promueve el crecimiento económico, la equidad social y la
                             preservación ambiental. Utilizamos IA para optimizar procesos,
@@ -27,6 +27,7 @@ const Desarrollo = () => {
                             className="border-2 border-black  backdrop:blur bg-white text-sm 
                     md:text-xl font-bold md:p-3 rounded-full hover:bg-gray-400 
                     hover:bg-opacity-50 w-44 h-16 md:w-64 md:h-20"
+                            onClick={() => setShowModal2()}
                         >
                             Agendar Una Demo
                         </button>
