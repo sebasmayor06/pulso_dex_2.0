@@ -43,7 +43,7 @@ export default function Empecemos({setShowModal2}) {
             30M
           </button>
         </div>
-        <div className="circulo w-[75px] md:w-[120px] h-[75px] md:h-[120px] bg-gradient-to-r from-white to-azulInicio rounded-[100%] absolute top-[-30%] md:top-[-40%] left-[80%] md:left-[160%] -translate-x-[50%] translate-y-[50%] z-0"></div>
+        <div className="circulo w-[75px] md:w-[120px] h-[75px] md:h-[120px] bg-gradient-to-r from-white to-azulInicio rounded-[100%] absolute top-[-30%] md:top-[-40%] left-[80%] lg:left-[150%] xl:left-[160%] -translate-x-[50%] translate-y-[50%] z-0"></div>
         <div className="circulo w-[120px] md:w-[180px] h-[120px] md:h-[180px] bg-gradient-to-r from-white to-azulInicio rounded-[100%] absolute top-[15%] md:top-[10%] left-[80%] md:left-[100%] -translate-x-[50%] translate-y-[50%] z-0"></div>
         <div className="circulo w-[200px] md:w-[360px] h-[200px] md:h-[360px] bg-gradient-to-r from-white to-azulInicio rounded-[100%] absolute top-[25%] md:top-[30%] left-[30%] md:left-[-60%] -translate-x-[50%] translate-y-[50%] z-0"></div>
         <div className="border-2 border-gray-200 rounded-3xl p-4 m-4 z-10 w-[350px] md:w-[520px]">

@@ -1,24 +1,35 @@
+"use client"
+
+import { Fragment, useState } from "react";
 import Desarrollo from "./components/Desarrollo";
 import Landing from "./components/Landing";
 import Mision from "./components/Mision";
 import VisionCart from "./components/VisionCart";
 
-export default function page() {
+import Form from "../components/Form2";
+
+export default function pageNosotros() {
+
+  const [showModal, setShowModal] = useState(false)
+
+
   return (
     <div>
       {/* landing */}
-      <div className=" bg-black md:h-screen">
+      <div className="  ">
         <Landing />
       </div>
       <div className="" >
-        <Mision/>
+        <Mision setShowModal2={()=> setShowModal(true)}/>
       </div>
       <div >
-        <VisionCart/>
+        <VisionCart setShowModal2={()=> setShowModal(true)} />
       </div>
       <div>
-        <Desarrollo/>
+        <Desarrollo setShowModal2={()=> setShowModal(true)} />
       </div>
+      <Form isVisible={showModal} onClose={() => setShowModal(false)}></Form>
+
     </div>
   )
 }
