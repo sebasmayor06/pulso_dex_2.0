@@ -25,13 +25,13 @@ export default function NoPierdas({setShowModal2}) {
         </div>
         <div className="w-full md:w-1/2 h-1/2 md:h-full flex justify-center items-center relative">
         
-        <div className='w-full h-full'>
+        <div className='w-full h-full flex justify-center items-center'>
         <Image
             src="/mujerTarjeta.png"
             alt="logo"
             width={600}
             height={600}
-            className="rounded-[10%] md:w-[600px] w-[340px] md:h-[600px] h-[380px] ml-5 md:ml-0"
+            className="rounded-[10%] md:w-[600px] w-[320px] md:h-[600px] h-[340px] ml-5 md:ml-0"
             />
         </div>
         </div>

@@ -1,11 +1,15 @@
 "use client";
-import React from "react";
-import { Button, Form, Input } from "antd";
+import React, { useState } from "react";
+import { Button, Form, Input, Alert } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
 export default function Form3() {
+  const [loading, setLoading] = useState(false);
+  const [form] = Form.useForm();
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: false,
@@ -24,13 +28,40 @@ export default function Form3() {
       span: 16,
     },
   };
+  const onFinish = async (e) => {
+    setLoading(true);
+    try {
+      const res = await fetch('/api/send', { 
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(e), 
+      });
+      if (res.ok) {
+        form.resetFields();
+        setShowSuccessAlert(true);
+        setTimeout(() => {
+          setShowSuccessAlert(false);
+        }, 2000);
+      } else {
+        // Maneja el caso en que la solicitud no sea exitosa
+        console.error("Error al enviar el formulario");
+      }
+    } catch (error) {
+      // Maneja los errores de red u otros errores
+      console.error("Error al enviar el formulario:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div ref={ref} className="overflow-x-hidden shadow-xl bg-white">
       <div className="flex flex-col justify-center items-center w-screen h-[750px] overflow-hidden left-0 bg-white gap-5">
         <div className="flex justify-center items-center h-[20%] mb-10">
           <div className="flex flex-row w-full gap-5 mt-32">
-            <div className="bg-azulInicio w-60 h-44 rounded-3xl flex justify-center items-center">
+            <div className={`bg-azulInicio w-60 h-44 rounded-3xl flex justify-center items-center ${inView?'animate-fade-right animate-once animate-duration-1000 animate-delay-100 animate-ease-linear':'hidden'}`}>
               <div className="bg-white w-52 h-36 rounded-3xl p-2">
                 <button className="h-8 w-24 rounded-full m-2 bg-azulInicio font-bold text-sm">
                 <a href="mailto:info@pulsodex.com.co" >Escríbenos</a>
@@ -47,7 +78,7 @@ export default function Form3() {
                 </div>
               </div>
             </div>
-            <div className="bg-aguaMarina w-60 h-44 rounded-3xl flex justify-center items-center">
+            <div className={`bg-aguaMarina w-60 h-44 rounded-3xl flex justify-center items-center ${inView?'animate-fade-left animate-once animate-duration-1000 animate-delay-100 animate-ease-linear':'hidden'}`}>
               <div className="bg-white w-52 h-36 rounded-3xl p-2">
                 <button className="h-8 w-24 rounded-full m-2 bg-aguaMarina font-bold text-sm">
                 <a href="https://wa.me/+573123456789" >Llámanos</a>
@@ -67,11 +98,13 @@ export default function Form3() {
           </div>
         </div>
         <div className="flex justify-center items-center h-[80%]">
-          <div className="bg-azulInicio p-6 rounded-3xl ">
+          <div className={`bg-azulInicio p-6 rounded-3xl ${inView?'animate-fade animate-once animate-duration-1000 animate-delay-100 animate-ease-linear':'animate-jump-out animate-once animate-duration-1000 animate-delay-100 animate-ease-linear'}`}>
             <Form
               labelAlign="top" // Coloca las etiquetas encima de los campos de entrada
               labelCol={{ span: 24 }} // Usa todo el ancho disponible para las etiquetas
               validateMessages={validateMessages}
+              onFinish={onFinish}
+              form={form}
             >
               <div className="grid grid-cols-2 gap-5">
                 <Form.Item
@@ -115,7 +148,7 @@ export default function Form3() {
                   name="preguntas"
                   rules={[{ required: true, message: "Este campo es requerido" }]}
                 >
-                  <TextArea rows={4} />
+                  <TextArea rows={4}/>
                 </Form.Item>
               </div>
               <Form.Item
@@ -124,13 +157,18 @@ export default function Form3() {
                   offset: 8,
                 }}
               >
-                <Button type="primary" htmlType="submit" className="bg-black text-white ml-16 font-bold">
-                  Enviar
+                <Button loading={loading} type="primary" htmlType="submit" className="bg-black text-white ml-16 font-bold">
+                {loading ? "Loading" : "Enviar"}
                 </Button>
               </Form.Item>
             </Form>
           </div>
         </div>
+        {showSuccessAlert && ( // Mostrar el Alert si showSuccessAlert es true
+          <div className="fixed top-10 right-10 z-50">
+            <Alert message='Datos Enviados Exitosamente!!!' type="success" />
+          </div>
+        )}
       </div>
     </div>
   );

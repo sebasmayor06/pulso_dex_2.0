@@ -24,6 +24,7 @@ const tailFormItemLayout = {
 export default function Form2({ isVisible, onClose }) {
   const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
 
  
   const onFinish = async (values) => {
@@ -32,10 +33,13 @@ export default function Form2({ isVisible, onClose }) {
     try {
       const response = await axios.post('http://localhost:8080/usuario', values);
       console.log("Usuario creado con éxito", response.data);
+      setShowSuccessAlert(true);
+        setTimeout(() => {
+          setShowSuccessAlert(false);
+        }, 2000);
     } catch (error) {
       console.log("Error al crear el usuario", error.response || error);
     } finally {
-      alert("Datos guardados con exito!!! pronto nos contactaremos contigo")
       setLoading(false);
       onClose();
     }
@@ -129,6 +133,11 @@ export default function Form2({ isVisible, onClose }) {
             </Form.Item>
           </Form>
         </div>
+      {showSuccessAlert && ( // Mostrar el Alert si showSuccessAlert es true
+          <div className="fixed top-10 right-10 z-50">
+            <Alert message='Datos Enviados Exitosamente!!!' type="success" />
+          </div>
+        )}
       </div>
     </div>
   );
