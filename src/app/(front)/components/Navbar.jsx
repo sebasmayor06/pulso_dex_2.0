@@ -11,6 +11,7 @@ export default function Navbar() {
   // navbar
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  
 
   const toogleNavbar = () => {
     setIsClick(!isClick);
@@ -34,7 +35,7 @@ export default function Navbar() {
     <>
    
       <nav
-        className={`${visible ?"":"hidden "} `}
+        className={`${visible || isClick ?"":"hidden"}`}
       >
         <div className={` fixed w-full z-50 mx-auto px-4 sm:px-6 lg:px-1 backdrop-blur-md border-b`}>
           <div className="flex items-center justify-between  h-16">
@@ -49,7 +50,7 @@ export default function Navbar() {
                   href="/"
                   className={`
                   ${pathname === "/" ? "text-white border border-white rounded-lg p-2 font-bold bg-black" : "text-black rounded-lg p-2 font-bold"}
-                  transition duration-500 ease-in-out  hover:text-white
+                  transition duration-500 ease-in-out  hover:text-verdeButtom hover:bg-black
                 `}
                 >
                   Inicio
@@ -58,7 +59,7 @@ export default function Navbar() {
                   href="/Soluciones"
                   className={`
                   ${pathname === "/Soluciones" ? "text-white border border-white rounded-lg p-2 font-bold bg-black" : "text-black rounded-lg p-2 font-bold"}
-                  transition duration-500 ease-in-out  hover:text-white
+                  transition duration-500 ease-in-out  hover:text-verdeButtom hover:bg-black
                 `}
                 >
                   Soluciones
@@ -67,7 +68,7 @@ export default function Navbar() {
                   href="/Ayuda"
                   className={`
                   ${pathname === "/Ayuda" ? "text-white border border-white rounded-lg p-2 font-bold bg-black" : "text-black rounded-lg p-2 font-bold"}
-                  transition duration-500 ease-in-out  hover:text-white
+                  transition duration-500 ease-in-out  hover:text-verdeButtom hover:bg-black
                 `}
                 >
                   Ayuda
@@ -76,7 +77,7 @@ export default function Navbar() {
                   href="/Nosotros"
                   className={`
                   ${pathname === "/Nosotros" ? "text-white border border-white rounded-lg p-2 font-bold bg-black" : "text-black rounded-lg p-2 font-bold"}
-                  transition duration-500 ease-in-out  hover:text-white
+                  transition duration-500 ease-in-out  hover:text-verdeButtom hover:bg-black
                 `}
                 >
                   Nosotros
@@ -134,46 +135,54 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        {isClick && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      </nav>
+        
+      <div className={` ${isClick ? 'animate-flip-down animate-ease-out left-0 w-full h-full flex items-start justify-start z-50 bg-white md:hidden fixed top-[65px]' : 'hidden'}`}>   
+               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 m-6 w-[80%]">
               <Link
                 href="/"
-                className="text-black block  hover:text-white rounded-lg p-2"
+                className="text-black block text-3xl hover:text-white rounded-lg p-2"
+                onClick={()=>setIsClick(false)}
               >
                 Inicio
               </Link>
+              <div className="border-2 w-full border-slate-200"></div>
               <Link
                 href="/Soluciones"
-                className="text-black block  hover:text-white rounded-lg p-2"
+                className="text-black block text-3xl hover:text-white rounded-lg p-2"
+                onClick={()=>setIsClick(false)}
               >
                 Soluciones
               </Link>
+              <div className="border-2 w-full border-slate-200"></div>
+
               <Link
                 href="/Ayuda"
-                className="text-black block  hover:text-white rounded-lg p-2"
+                className="text-black block text-3xl hover:text-white rounded-lg p-2"
+                onClick={()=>setIsClick(false)}
               >
                 Ayuda
               </Link>
+              <div className="border-2 w-full border-slate-200"></div>
+
               <Link
                 href="/Nosotros"
-                className="text-black block  hover:text-white rounded-lg p-2"
+                className="text-black block text-3xl hover:text-white rounded-lg p-2"
+                onClick={()=>setIsClick(false)}
               >
                 Nosotros
               </Link>
-              <span
-                className="text-black rounded-lg p-2"
-              >
-                Comienza gratis
-              </span>
+              <div className="border-2 w-full border-slate-200"></div>
+
+              
               <button onClick={() => setShowModal(true)} className="bg-black rounded-lg text-white p-2 hover:bg-verdeButtom hover:text-black">
                 Agendar Demo
               </button>
             </div>
           </div>
-        )}
-      </nav>
+      
       <Form isVisible={showModal} onClose={() => setShowModal(false)}></Form>
+      
     </>
   );
 }
