@@ -26,6 +26,9 @@ module.exports = {
       width: {
         "1440px": "1440px",
       },
+      screens: {
+        xs: "350px",
+      },
       colors: {
         azulParticipa: '#B9E6FF',
         gris: "#8C8C8C",

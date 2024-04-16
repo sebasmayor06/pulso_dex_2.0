@@ -38,7 +38,8 @@ const Formatos = ({ image, price, p1, p2, p3, p4, id, modo }) => {
 
             </div>
             <div className="px-2 pb-8">
-                <button className="w-full py-4 md:text-md text-[#292930] font-semibold  rounded-[50px]  border-2  bg-white">comprar</button>
+            <button className="w-full py-4 md:text-md text-[#292930] font-semibold rounded-[50px] border-2 bg-white hover:bg-black hover:text-white transition duration-300">comprar</button>
+
             </div>
         </div>
     )
