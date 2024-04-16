@@ -14,10 +14,10 @@ const Mision = ({ setShowModal2 }) => {
                     />
                 </div>
                 <div className="px-8 pt-8">
-                    <h1 className="xs:text-3xl text-2xl  font-bold   md:text-6xl md:font-medium text-[#292930] xs:mb-4 mb-2">Nuestra Misión</h1>
-                    <p className="text-[#3a3a3a]  md:text-xl xs:text-lg text-[0.8rem]  xs:mb-8 mb-4">En Pulso Dex, nos dedicamos a simplificar y potenciar la experiencia de compra en línea. Nuestro enfoque está en proporcionar una plataforma intuitiva y eficiente que automatice las ventas y la distribución de productos con IA, brindando comodidad y confianza en cada transacción.</p>
+                    <h1 className="title-secundary xs:mb-4 mb-2">Nuestra Misión</h1>
+                    <p className=" text-color-black  md:text-xl xs:text-lg text-[0.8rem]  xs:mb-8 mb-4">En Pulso Dex, nos dedicamos a simplificar y potenciar la experiencia de compra en línea. Nuestro enfoque está en proporcionar una plataforma intuitiva y eficiente que automatice las ventas y la distribución de productos con IA, brindando comodidad y confianza en cada transacción.</p>
                     <button
-                        className="bg-azulInicio border-2  rounded-md xs:text-sm font-semibold text-black p-2 hover:bg-white hover:text-black w-36  xs:w-40 h-12  md:w-64 md:h-20 text-[0.8rem]  md:text-xl rounded-l-full rounded-r-full"
+                        className="bg-azulInicio border-2  rounded-md xs:text-sm font-semibold text-color-btn p-2 hover:bg-white hover:text-black w-36  xs:w-40 h-12  md:w-64 md:h-20 text-[0.8rem]  md:text-xl rounded-l-full rounded-r-full"
                         onClick={() => setShowModal2()}
 
                     >

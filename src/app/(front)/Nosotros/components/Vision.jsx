@@ -36,8 +36,8 @@ const Vision = ({ description, title, image }) => {
           height={50}
         />
       </div>
-      <h2 className="text-xl text-white font-medium mb-2">{title}</h2>
-      <p className="text-[#D0D0D0] text-center  md:text-xl  mb-8">
+      <h2 className="text-2xl text-white font-medium mb-2">{title}</h2>
+      <p className="text-[#D0D0D0] text-center  md:text-xl text-lg  mb-8">
         {description}
       </p>
 

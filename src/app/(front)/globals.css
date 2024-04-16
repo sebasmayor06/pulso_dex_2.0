@@ -107,3 +107,8 @@
   }
 
 
+@layer components {
+  .title-secundary {
+    @apply xs:text-4xl text-2xl  font-bold   md:text-6xl md:font-medium text-color-primary 
+  }
+}
