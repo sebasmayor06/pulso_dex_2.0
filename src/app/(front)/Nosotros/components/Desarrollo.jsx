@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Desarrollo = ({ setShowModal2 }) => {
   return (
-    <div className="md:h-screen flex flex-col gap-10 items-center justify-center py-20">
-      <h1 className="title-secundary text-center px-4 ">
+    <div className=" flex flex-col gap-10 items-center justify-center py-20">
+      <h1 className="title-secundary text-center px-2 ">
         Desarrollo sostenible y tecnología
       </h1>
       <div className="bg-[#B9E6FF] md:rounded-[50px] md:max-w-5xl xs:mx-6 mx-4  rounded-xl">
@@ -25,13 +25,14 @@ const Desarrollo = ({ setShowModal2 }) => {
               Aprende Más
             </button>
           </div>
-          <div className="">
+          <div className="flex justify-center md:w-[180rem] md:h-[18rem] xs:w-[22rem] xs:h-[24rem] w-[18rem] ">
             <Image
               src="/perfil.png"
               alt="Imagen de desarrollo"
               width={600}
               height={600}
-              className=" rounded-[12%] w-[120rem]"
+              className="object-cover w-full h-full rounded-[12%]"
+
             />
           </div>
           {/* <button

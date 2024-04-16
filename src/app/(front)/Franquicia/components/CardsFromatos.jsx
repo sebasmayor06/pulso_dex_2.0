@@ -48,13 +48,13 @@ const CardsFromatos = () => {
         <div className="my-24 flex flex-col items-center justify-center">
             <div className="flex justify-start w-full md:max-w-[100rem]">
 
-            <h2 className="text-4xl font-medium text-[#292930] mb-8 mx-2 ">
+            <h2 className="title-secundary  mb-8 mx-2 text-center md:text-start ">
                 Nuestros formatos de 
                 <p>e-commerce</p>
             </h2>
             </div>
             <div className="flex justify-center items-center w-full">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-2 md:max-w-[100rem]">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:mx-2 mx-3  md:max-w-[100rem]">
                     {
                         datos.map((dato, index) => (
                             <div className=" ">
@@ -62,6 +62,8 @@ const CardsFromatos = () => {
                                 <Formatos
                                     image={dato.image}
                                     price={dato.price}
+                                    volumen={dato.vulemen}
+                                    peso={dato.peso}
                                     p1={dato.p1}
                                     p2={dato.p2}
                                     p3={dato.p3}
