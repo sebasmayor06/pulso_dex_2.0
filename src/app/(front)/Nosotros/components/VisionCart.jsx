@@ -14,13 +14,13 @@ const VisionCart = ({ setShowModal2 }) => {
     return (
         <div
 
-            className="flex flex-col justify-center gap-20 items-center bg-[#B9CEFF] w-full h-full md:px-2 md:py-16"
+            className="flex flex-col justify-center md:gap-20 gap-10 items-center bg-[#B9CEFF] w-full h-full md:px-2 md:py-16 py-16"
         >
-            <h1 className="text-3xl text-center px-52 md:text-6xl md:font-medium text-[#292930]">
+            <h1 className="title-secundary text-center px-4  md:px-52">
                 Los ejes fundamentales de nuestra visión.
             </h1>
             <div className="flex justify-center">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:max-w-[100rem]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xs:px-8 px-4  md:grid-cols-4 gap-8 md:max-w-[100rem]">
                     {datos.map((dato, index) => (
                         <Vision key={index} title={dato.title} description={dato.description} image={dato.image} />
                     ))}

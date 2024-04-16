@@ -37,7 +37,7 @@ export default function Navbar() {
       <nav
         className={`${visible || isClick ?"":"hidden"}`}
       >
-        <div className={` fixed w-full z-50 mx-auto px-4 sm:px-6 lg:px-1 backdrop-blur-md border-b`}>
+        <div className={` fixed w-full z-50 mx-auto px-4 sm:px-6 lg:px-1 backdrop-blur-md border-b `}>
           <div className="flex items-center justify-between  h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">

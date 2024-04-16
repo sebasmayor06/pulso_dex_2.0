@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const Mision = ({ setShowModal2 }) => {
     return (
-        <div className="flex justify-center items-center h-screen ">
-            <div className=" flex flex-col   md:flex-row  gap-20 md:max-w-5xl ">
-                <div className="border-2 border-black rounded-[12%] overflow-hidden w-full md:w-[120rem] ">
+        <div className="flex justify-center items-center md:h-screen w-full h-full md:mb-0 mb-8 z-50 ">
+            <div className=" flex items-center justify-center flex-col-reverse   md:flex-row  md:gap-20 gap-4  xs:gap-10  md:max-w-5xl ">
+                <div className="flex justify-center items-center border-2 border-black rounded-[12%] overflow-hidden w-[13rem]  xs:w-[20rem] md:w-[120rem] ">
                     <Image
                         src="/nosotros/image.png"
                         alt="Imagen de la misión"
@@ -13,15 +13,15 @@ const Mision = ({ setShowModal2 }) => {
                         className="p-2 bg-[#B9CEFF]"
                     />
                 </div>
-                <div>
-                    <h1 className="text-3xl  md:text-6xl md:font-medium text-[#292930] mb-4">Nuestra Misión</h1>
-                    <p className="text-gris  md:text-xl  mb-8">En Pulso Dex, nos dedicamos a simplificar y potenciar la experiencia de compra en línea. Nuestro enfoque está en proporcionar una plataforma intuitiva y eficiente que automatice las ventas y la distribución de productos con IA, brindando comodidad y confianza en cada transacción.</p>
+                <div className="px-8 pt-8">
+                    <h1 className="title-secundary xs:mb-4 mb-2">Nuestra Misión</h1>
+                    <p className=" text-color-black  md:text-xl xs:text-lg text-[0.8rem]  xs:mb-8 mb-4">En Pulso Dex, nos dedicamos a simplificar y potenciar la experiencia de compra en línea. Nuestro enfoque está en proporcionar una plataforma intuitiva y eficiente que automatice las ventas y la distribución de productos con IA, brindando comodidad y confianza en cada transacción.</p>
                     <button
-                        className="bg-azulInicio border-2 border-[#292930] rounded-md font-semibold text-black p-2 hover:bg-white hover:text-black w-32 h-12 md:w-64 md:h-20 text-xs md:text-xl rounded-l-full rounded-r-full"
+                        className="bg-azulInicio border-2  rounded-md xs:text-sm font-semibold text-color-btn p-2 hover:bg-white hover:text-black w-36  xs:w-40 h-12  md:w-64 md:h-20 text-[0.8rem]  md:text-xl rounded-l-full rounded-r-full"
                         onClick={() => setShowModal2()}
 
                     >
-                        Agendar Demo
+                        Agendar una Demo
                     </button>
                 </div>
             </div>
