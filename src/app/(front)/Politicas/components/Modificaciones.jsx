@@ -1,10 +1,10 @@
 import React from "react";
 import { listSegundo } from "../utils/datosSegundo";
 
-const Segundo = () => {
+const Modificaciones = () => {
   return (
-    <div className="flex justify-center py-8">
-      <div className="bg-azulParticipa p-12 md:max-w-[100rem]">
+    <div className="politica-container">
+      <div className="politica-container_children">
         <div>
           <h2 className=" title-secundary text-4xl font-bold pb-4">
             Modificaciones del presente Acuerdo
@@ -75,4 +75,4 @@ const Segundo = () => {
   );
 };
 
-export default Segundo;
+export default Modificaciones;

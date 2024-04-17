@@ -114,4 +114,10 @@
   .title-secundary {
     @apply xs:text-4xl text-2xl  font-bold   md:text-6xl md:font-medium text-color-primary 
   }
+  .politica-container {
+    @apply flex justify-center md:py-8 py-4 mx-4
+  }
+  .politica-container_children {
+    @apply bg-azulParticipa md:p-12 md:max-w-[100rem] p-6 rounded-lg
+  }
 }
