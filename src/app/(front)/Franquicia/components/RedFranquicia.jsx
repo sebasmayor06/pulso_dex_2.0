@@ -3,8 +3,8 @@ import Image from "next/image";
 const RedFranquicia = () => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="h-screen md:h-full flex flex-col justify-center items-center ">
-        <div className="flex flex-col justify-center items-center  gap-8 md:mt-24 mt-28">
+      <div className=" md:h-full flex flex-col justify-center items-center ">
+        <div className="flex flex-col justify-center items-center gap-8  xs:gap-16 md:mt-20 xs:mt-24 mt-20">
           <h1 className="title-primary font-extrabold text-center  mx-2  md:max-w-7xl ">
             ¡Únete a nuestra red de franquicias y convierte tu sueño empresarial
             en realidad!
@@ -21,7 +21,7 @@ const RedFranquicia = () => {
           </div>
         </div>
       </div>
-      <div className="mt-12 max-w-[46.69rem] md:mx-auto ">
+      <div className="xs:mt-20 mt-12  max-w-[46.69rem] md:mx-auto ">
         <h2 className=" title-secundary md:text-4xl font-bold text-center mb-8">
           ¿Por qué una franquicia es la mejor opción?
         </h2>

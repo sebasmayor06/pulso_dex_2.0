@@ -109,7 +109,7 @@
 
 @layer components {
   .title-primary {
-    @apply xs:text-4xl text-3xl font-extrabold  md:text-6xl md:font-medium text-[#000929] xs:font-extrabold
+    @apply xs:text-4xl text-3xl  md:text-6xl  text-[#000929] md:font-extrabold
   }
   .title-secundary {
     @apply xs:text-4xl text-2xl  font-bold   md:text-6xl md:font-medium text-color-primary 
