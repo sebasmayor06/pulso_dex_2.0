@@ -5,11 +5,11 @@ const Modificaciones = () => {
   return (
     <div className="politica-container">
       <div className="politica-container_children">
-        <div>
-          <h2 className=" title-secundary text-4xl font-bold pb-4">
+        <div className="pb-8">
+          <h2 className=" title-secundary  pb-4">
             Modificaciones del presente Acuerdo
           </h2>
-          <p className="pb-4">
+          <p className="text-parrafo pb-4">
             Si nuestras prácticas de tratamiento de datos cambian,
             actualizaremos esta Política de Privacidad en consecuencia para
             informarle de ellas por adelantado y darle la posibilidad de dar su
@@ -35,8 +35,8 @@ const Modificaciones = () => {
             Admisibilidad
           </h2>
           <div className="pb-4">
-            <h3>Edad</h3>
-            <p>
+            <h3 className="text-parrafo font-bold">Edad</h3>
+            <p className="text-parrafo">
               Al acceder a la Interfaz y utilizarla, usted declara y garantiza
               que tiene al menos dieciocho (18) años de edad. Si es menor de
               dieciocho (18) años, no podrá, bajo ninguna circunstancia ni por
@@ -46,25 +46,25 @@ const Modificaciones = () => {
             </p>
           </div>{" "}
           <div className="pb-4">
-            <h3>Aplicabilidad</h3>
-            <p>
+            <h3 className="text-parrafo font-bold">Aplicabilidad</h3>
+            <p className="text-parrafo">
               Esta Política de Privacidad se aplica a todas sus interacciones
               con nosotros a través de la Interfaz y a sus interacciones con
               nosotros en relación con la misma.
             </p>
           </div>
-          <p className="pb-4">
+          <p className="pb-4 text-parrafo">
             A continuación se indican las categorías de nuestros procesadores
             utilizados en la Interfaz debido a una hoja de ruta interna de
             procesamiento de datos que proporciona una breve comprensión de
             nuestras actividades de procesamiento de datos con respecto a cada
             pieza de los Datos Personales que podemos recopilar a través de la
             Interfaz, así como su lugar en cada evento de procesamiento de
-            datos. Puede solicitarla en hola@pulsodex.com.co A continuación se
+            datos. Puede solicitarla en <a href="mailto:ayuda@pulsodex.com.co">ayuda@pulsodex.com.co</a> A continuación se
             indican las categorías de nuestros procesadores que pueden acceder y
             procesar sus Datos Personales a través de la Interfaz:
           </p>{" "}
-          <ul className="pb-8 list-disc ml-8">
+          <ul className="pb-8 list-disc ml-8 text-parrafo">
             {listSegundo.map((list, index) => (
               <li key={index}>{list}</li>
             ))}

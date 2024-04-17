@@ -4,8 +4,8 @@ const Transferencia = () => {
   return (
     <div className="politica-container">
       <div className="politica-container_children">
-        <h2 className=" title-secundary text-4xl font-bold pb-4">Transferencia de datos personales</h2>
-        <p>
+        <h2 className=" title-secundary  pb-4">Transferencia de datos personales</h2>
+        <p className="text-parrafo pb-4">
           Las transferencias a terceros países estarán sujetas a las garantías
           apropiadas, a saber, las cláusulas contractuales tipo adoptadas por la
           autoridad de control y aprobadas las normas colombianas. Usted podrá
@@ -16,7 +16,7 @@ const Transferencia = () => {
           personal y de propiedad de Pulso Dex de terceros, así como las
           condiciones de sus relaciones con la Interfaz.
         </p>
-        <p>
+        <p className="text-parrafo">
           Tenga en cuenta que el uso de la interfaz basada en cadenas de bloques
           públicas pretende registrar de forma inmutable las transacciones a
           través de amplias redes de sistemas informáticos. Muchas blockchains

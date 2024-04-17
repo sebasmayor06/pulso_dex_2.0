@@ -18,11 +18,11 @@ export default function PoliticasPage() {
       >
         <div className="flex flex-col gap-5">
           <h1
-            className={` xs:title-primary  animate-fade-right ${
+            className={` title-primary  animate-fade-right ${
               inView ? "animate-once animate-duration-500 animate-ease-in" : ""
             }`}
           >
-            Construyamos algo increíble juntos
+            Política de Privacidad
           </h1>
         </div>
       </div>

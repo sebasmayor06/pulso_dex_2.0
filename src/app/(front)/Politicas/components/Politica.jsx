@@ -20,7 +20,7 @@ const Politica = () => {
   return (
     <div className=" politica-container">
       <div className=" politica-container_children">
-        <h2 className=" title-secundary text-4xl font-bold pb-4">
+        <h2 className=" title-secundary  pb-4">
           Política de privacidad de la interfaz de Pulso Dex
         </h2>
         {datos.map((text, index) => {

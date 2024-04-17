@@ -4,8 +4,8 @@ const Privacidad = () => {
   return (
     <div className="politica-container">
       <div className="politica-container_children">
-        <h2 className=" title-secundary text-4xl font-bold pb-4">Privacidad de los niños</h2>
-        <p>
+        <h2 className=" title-secundary  pb-4">Privacidad de los niños</h2>
+        <p className="text-parrafo">
           Nuestra interfaz no está diseñada para recoger datos de personas
           menores de 18 años. No permitimos conscientemente que ningún menor de
           18 años envíe datos a nuestra Interfaz. Si cree que su hijo puede
