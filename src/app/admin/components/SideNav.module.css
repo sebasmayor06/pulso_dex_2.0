@@ -1,0 +1,20 @@
+.flex:hover h2 {
+    color: #23272E;
+    transition: all;
+    transition: color 0.3s ease;
+    
+  }
+
+.flex:hover div {
+    /* background-color: red; */
+    color: #23272E;
+    transition: all;
+    transition: color 0.3s ease;
+    
+}
+
+.svgContainer{
+    color: #8B909A;
+}
+
+ 

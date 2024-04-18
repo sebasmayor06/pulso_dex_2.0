@@ -45,6 +45,8 @@ module.exports = {
         texto:'#6F6F6F',
         card3: '#E5F5F9',
         card4: '#FDEEC4',
+
+        "dash-primary": "#8B909A",
       },
       animation: {
         slideInUp: 'slideInUp 1s ease-out forwards',

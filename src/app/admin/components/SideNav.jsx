@@ -1,19 +1,21 @@
+import Link from "next/link";
+import styles from "./SideNav.module.css"
+
 const SideNav = ({ name, href, img }) => {
-    return (
-        <>
-            <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
-                <ul className='pl-8'>
-                    <li className='flex items-center pb-6'>
-                        <div dangerouslySetInnerHTML={{ __html: img }} />
-                        <h2 className='text-[#6D6D6D] pl-4 font-semibold'>
-                            {name}
-                        </h2>
-                    </li>
-                </ul>
-            </div>
-        </>
 
-    )
-}
+  return (
+    <>
+    
+      <Link href={href} className=" ">
+        <li className={`${styles.flex} flex  items-center rounded-xl pl-6 py-4 my-2 transition duration-300 ease-in hover:bg-[#F3F4F8]`}>
+        <div className={`${styles.svgContainer}`} dangerouslySetInnerHTML={{ __html: img }} />
+          <h2 className="text-[#8B909A] pl-4 font-semibold group-hover:text-[#23272E]">
+            {name}
+          </h2>
+        </li>
+      </Link>
+    </>
+  );
+};
 
-export default SideNav
+export default SideNav;

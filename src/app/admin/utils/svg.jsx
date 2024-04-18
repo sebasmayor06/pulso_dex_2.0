@@ -1,86 +1,138 @@
-export const Participaciones = `
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-<path d="M2.66667 24C1.93333 24 1.30556 23.7389 0.783333 23.2167C0.261111 22.6944 0 22.0667 0 21.3333V0H2.66667V21.3333H24V24H2.66667ZM4 20V8H9.33333V20H4ZM10.6667 20V1.33333H16V20H10.6667ZM17.3333 20V13.3333H22.6667V20H17.3333Z" fill="#6D6D6D"/>
+export const Pedidos = `
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+<ellipse cx="5.49996" cy="17.4166" rx="1.83333" ry="1.83333" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="5.49996" cy="17.4166" rx="1.83333" ry="1.83333" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="15.5833" cy="17.4166" rx="1.83333" ry="1.83333" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="15.5833" cy="17.4166" rx="1.83333" ry="1.83333" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.5833 15.5833H5.49996V2.75H3.66663" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.5833 15.5833H5.49996V2.75H3.66663" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.5 4.58331L18.3333 5.49998L17.4167 11.9166H5.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.5 4.58331L18.3333 5.49998L17.4167 11.9166H5.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-`
-export const Movimientos = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-<mask id="mask0_1155_47" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
-<rect width="32" height="32" fill="#D9D9D9"/>
-</mask>
-<g mask="url(#mask0_1155_47)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9.66667 3C8.93029 3 8.33333 3.59695 8.33333 4.33333V5.66667H7C4.79086 5.66667 3 7.45753 3 9.66667V25.6667C3 27.8758 4.79086 29.6667 7 29.6667H25.6667C27.8758 29.6667 29.6667 27.8758 29.6667 25.6667V9.66667C29.6667 7.45753 27.8758 5.66667 25.6667 5.66667H24.3333V4.33333C24.3333 3.59695 23.7364 3 23 3C22.2636 3 21.6667 3.59695 21.6667 4.33333V5.66667H11V4.33333C11 3.59695 10.403 3 9.66667 3ZM12.3333 17.6667C12.3333 16.9303 12.9303 16.3333 13.6667 16.3333H23C23.7364 16.3333 24.3333 16.9303 24.3333 17.6667C24.3333 18.403 23.7364 19 23 19H13.6667C12.9303 19 12.3333 18.403 12.3333 17.6667ZM8.33333 23C8.33333 22.2636 8.93029 21.6667 9.66667 21.6667H17.6667C18.403 21.6667 19 22.2636 19 23C19 23.7364 18.403 24.3333 17.6667 24.3333H9.66667C8.93029 24.3333 8.33333 23.7364 8.33333 23Z" fill="#6D6D6D"/>
-</g>
-</svg>`
+`;
+export const Clientes = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+<ellipse cx="8.25004" cy="6.41667" rx="3.66667" ry="3.66667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="8.25004" cy="6.41667" rx="3.66667" ry="3.66667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.75 19.25V17.4167C2.75 15.3916 4.39162 13.75 6.41667 13.75H10.0833C12.1084 13.75 13.75 15.3916 13.75 17.4167V19.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.75 19.25V17.4167C2.75 15.3916 4.39162 13.75 6.41667 13.75H10.0833C12.1084 13.75 13.75 15.3916 13.75 17.4167V19.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.6666 2.86908C16.289 3.28449 17.4238 4.7464 17.4238 6.42116C17.4238 8.09592 16.289 9.55784 14.6666 9.97325" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.6666 2.86908C16.289 3.28449 17.4238 4.7464 17.4238 6.42116C17.4238 8.09592 16.289 9.55784 14.6666 9.97325" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.25 19.2499V17.4166C19.2404 15.7524 18.1113 14.3034 16.5 13.8874" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.25 19.2499V17.4166C19.2404 15.7524 18.1113 14.3034 16.5 13.8874" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
 
-export const Categorias = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-<mask id="mask0_1155_43" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
-<rect width="32" height="32" fill="#D9D9D9"/>
-</mask>
-<g mask="url(#mask0_1155_43)">
-<path d="M24 17.6667L26.6666 20.3334V26.6667C26.6666 27.4 26.4055 28.0278 25.8833 28.55C25.3611 29.0722 24.7333 29.3334 24 29.3334H5.33329C4.59996 29.3334 3.97218 29.0722 3.44996 28.55C2.92774 28.0278 2.66663 27.4 2.66663 26.6667V8.00002C2.66663 7.26669 2.92774 6.63891 3.44996 6.11669C3.97218 5.59446 4.59996 5.33335 5.33329 5.33335H12.6666C12.4888 5.73335 12.3555 6.16113 12.2666 6.61669C12.1777 7.07224 12.1111 7.53335 12.0666 8.00002H5.33329V26.6667H24V17.6667ZM25.7333 11.8667L30 16.1334L28.1333 18L23.8666 13.7334C23.4 14 22.9 14.2222 22.3666 14.4C21.8333 14.5778 21.2666 14.6667 20.6666 14.6667C19 14.6667 17.5833 14.0834 16.4166 12.9167C15.25 11.75 14.6666 10.3334 14.6666 8.66669C14.6666 7.00002 15.25 5.58335 16.4166 4.41669C17.5833 3.25002 19 2.66669 20.6666 2.66669C22.3333 2.66669 23.75 3.25002 24.9166 4.41669C26.0833 5.58335 26.6666 7.00002 26.6666 8.66669C26.6666 9.26669 26.5777 9.83335 26.4 10.3667C26.2222 10.9 26 11.4 25.7333 11.8667ZM20.6666 12C21.6 12 22.3888 11.6778 23.0333 11.0334C23.6777 10.3889 24 9.60002 24 8.66669C24 7.73335 23.6777 6.94446 23.0333 6.30002C22.3888 5.65558 21.6 5.33335 20.6666 5.33335C19.7333 5.33335 18.9444 5.65558 18.3 6.30002C17.6555 6.94446 17.3333 7.73335 17.3333 8.66669C17.3333 9.60002 17.6555 10.3889 18.3 11.0334C18.9444 11.6778 19.7333 12 20.6666 12ZM5.33329 26.6667V8.00002V17.3334V16.9334V26.6667Z" fill="#6D6D6D"/>
-</g>
+export const Codigo = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+<path d="M13.75 4.58331V6.41665" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.75 4.58331V6.41665" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.75 10.0833V11.9166" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.75 10.0833V11.9166" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.75 15.5833V17.4166" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.75 15.5833V17.4166" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.58333 4.58331H17.4167C18.4292 4.58331 19.25 5.40412 19.25 6.41665V9.16665C18.2375 9.16665 17.4167 9.98746 17.4167 11C17.4167 12.0125 18.2375 12.8333 19.25 12.8333V15.5833C19.25 16.5958 18.4292 17.4166 17.4167 17.4166H4.58333C3.57081 17.4166 2.75 16.5958 2.75 15.5833V12.8333C3.76252 12.8333 4.58333 12.0125 4.58333 11C4.58333 9.98746 3.76252 9.16665 2.75 9.16665V6.41665C2.75 5.40412 3.57081 4.58331 4.58333 4.58331" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.58333 4.58331H17.4167C18.4292 4.58331 19.25 5.40412 19.25 6.41665V9.16665C18.2375 9.16665 17.4167 9.98746 17.4167 11C17.4167 12.0125 18.2375 12.8333 19.25 12.8333V15.5833C19.25 16.5958 18.4292 17.4166 17.4167 17.4166H4.58333C3.57081 17.4166 2.75 16.5958 2.75 15.5833V12.8333C3.76252 12.8333 4.58333 12.0125 4.58333 11C4.58333 9.98746 3.76252 9.16665 2.75 9.16665V6.41665C2.75 5.40412 3.57081 4.58331 4.58333 4.58331" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-`
+`;
 
-export const Academia = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-<mask id="mask0_598_3195" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
-<rect width="32" height="32" fill="#D9D9D9"/>
-</mask>
-<g mask="url(#mask0_598_3195)">
-<path d="M30.18 25.58C30.65 25.21 30.95 24.642 30.95 24.002C30.95 23.286 30.574 22.658 30.008 22.304L30 10.66L28 12V22.3C27.434 22.66 27.064 23.284 27.064 23.994C27.064 24.626 27.358 25.19 27.816 25.558L27.06 26.562C26.414 27.382 26.018 28.424 26 29.558V32.002H27.62C27.624 32.002 27.63 32.002 27.63 32.002C28.452 32.002 29.144 31.438 29.336 30.674L29.998 28.002V32.002H31.998V29.582C31.98 28.444 31.584 27.402 30.93 26.572L30.18 25.58Z" fill="#6D6D6D"/>
-<path d="M16 0L0 8L16 18L32 8L16 0Z" fill="#6D6D6D"/>
-<path d="M16 20L6 13.34V16.76C6 18.58 11.88 24 16 24C20.12 24 26 18.58 26 16.76V13.34L16 20Z" fill="#6D6D6D"/>
-</g>
+export const Categorias = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+<circle cx="8.70833" cy="8.70833" r="5.95833" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="8.70833" cy="8.70833" r="5.95833" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="9.16663" y="9.16669" width="10.0833" height="10.0833" rx="2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="9.16663" y="9.16669" width="10.0833" height="10.0833" rx="2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-`
+`;
 
-export const Calcular = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-<mask id="mask0_1155_64" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
-<rect width="32" height="32" fill="#D9D9D9"/>
-</mask>
-<g mask="url(#mask0_1155_64)">
-<path d="M11.3333 22.6667C11.8889 22.6667 12.3611 22.4722 12.75 22.0833C13.1389 21.6944 13.3333 21.2222 13.3333 20.6667C13.3333 20.1111 13.1389 19.6389 12.75 19.25C12.3611 18.8611 11.8889 18.6667 11.3333 18.6667C10.7778 18.6667 10.3056 18.8611 9.91667 19.25C9.52778 19.6389 9.33333 20.1111 9.33333 20.6667C9.33333 21.2222 9.52778 21.6944 9.91667 22.0833C10.3056 22.4722 10.7778 22.6667 11.3333 22.6667ZM11.3333 13.3333C11.8889 13.3333 12.3611 13.1389 12.75 12.75C13.1389 12.3611 13.3333 11.8889 13.3333 11.3333C13.3333 10.7778 13.1389 10.3056 12.75 9.91667C12.3611 9.52778 11.8889 9.33333 11.3333 9.33333C10.7778 9.33333 10.3056 9.52778 9.91667 9.91667C9.52778 10.3056 9.33333 10.7778 9.33333 11.3333C9.33333 11.8889 9.52778 12.3611 9.91667 12.75C10.3056 13.1389 10.7778 13.3333 11.3333 13.3333ZM20.6667 22.6667C21.2222 22.6667 21.6944 22.4722 22.0833 22.0833C22.4722 21.6944 22.6667 21.2222 22.6667 20.6667C22.6667 20.1111 22.4722 19.6389 22.0833 19.25C21.6944 18.8611 21.2222 18.6667 20.6667 18.6667C20.1111 18.6667 19.6389 18.8611 19.25 19.25C18.8611 19.6389 18.6667 20.1111 18.6667 20.6667C18.6667 21.2222 18.8611 21.6944 19.25 22.0833C19.6389 22.4722 20.1111 22.6667 20.6667 22.6667ZM20.6667 13.3333C21.2222 13.3333 21.6944 13.1389 22.0833 12.75C22.4722 12.3611 22.6667 11.8889 22.6667 11.3333C22.6667 10.7778 22.4722 10.3056 22.0833 9.91667C21.6944 9.52778 21.2222 9.33333 20.6667 9.33333C20.1111 9.33333 19.6389 9.52778 19.25 9.91667C18.8611 10.3056 18.6667 10.7778 18.6667 11.3333C18.6667 11.8889 18.8611 12.3611 19.25 12.75C19.6389 13.1389 20.1111 13.3333 20.6667 13.3333ZM6.66667 28C5.93333 28 5.30556 27.7389 4.78333 27.2167C4.26111 26.6944 4 26.0667 4 25.3333V6.66667C4 5.93333 4.26111 5.30556 4.78333 4.78333C5.30556 4.26111 5.93333 4 6.66667 4H25.3333C26.0667 4 26.6944 4.26111 27.2167 4.78333C27.7389 5.30556 28 5.93333 28 6.66667V25.3333C28 26.0667 27.7389 26.6944 27.2167 27.2167C26.6944 27.7389 26.0667 28 25.3333 28H6.66667ZM6.66667 25.3333H25.3333V6.66667H6.66667V25.3333Z" fill="#6D6D6D"/>
-</g>
+export const Transaccion = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+<path d="M12.8334 2.75V6.41667C12.8334 6.92293 13.2438 7.33333 13.75 7.33333H17.4167" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.8334 2.75V6.41667C12.8334 6.92293 13.2438 7.33333 13.75 7.33333H17.4167" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5834 19.25H6.41671C5.40419 19.25 4.58337 18.4292 4.58337 17.4167V4.58333C4.58337 3.57081 5.40419 2.75 6.41671 2.75H12.8334L17.4167 7.33333V17.4167C17.4167 18.4292 16.5959 19.25 15.5834 19.25Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.5834 19.25H6.41671C5.40419 19.25 4.58337 18.4292 4.58337 17.4167V4.58333C4.58337 3.57081 5.40419 2.75 6.41671 2.75H12.8334L17.4167 7.33333V17.4167C17.4167 18.4292 16.5959 19.25 15.5834 19.25Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.25 8.25002H9.16667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.25 8.25002H9.16667" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.25 11.9166H13.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.25 11.9166H13.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.25 15.5833H13.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.25 15.5833H13.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-`
+`;
 
-export const Soporte = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1.16736 5.55944C1.55428 3.31319 3.33971 1.66199 5.59311 1.31912C7.75222 0.990598 10.7142 0.666687 14.0001 0.666687C17.286 0.666687 20.2479 0.990598 22.407 1.31912C24.6604 1.66199 26.4459 3.31319 26.8328 5.55944C27.1025 7.12497 27.3334 9.11369 27.3334 11.3334C27.3334 13.553 27.1025 15.5417 26.8328 17.1073C26.4459 19.3535 24.6604 21.0047 22.407 21.3476C20.4318 21.6481 17.7846 21.9448 14.8322 21.9932L6.67838 26.8113C5.78956 27.3365 4.66675 26.6958 4.66675 25.6634V21.1253C2.86216 20.5252 1.49949 19.0355 1.16736 17.1073C0.897697 15.5417 0.666748 13.553 0.666748 11.3334C0.666748 9.11369 0.897697 7.12497 1.16736 5.55944ZM6.00008 8.66669C6.00008 7.93031 6.59703 7.33335 7.33341 7.33335H20.6667C21.4031 7.33335 22.0001 7.93031 22.0001 8.66669C22.0001 9.40307 21.4031 10 20.6667 10H7.33341C6.59703 10 6.00008 9.40307 6.00008 8.66669ZM6.00008 14C6.00008 13.2636 6.59703 12.6667 7.33341 12.6667H12.6667C13.4031 12.6667 14.0001 13.2636 14.0001 14C14.0001 14.7364 13.4031 15.3334 12.6667 15.3334H7.33341C6.59703 15.3334 6.00008 14.7364 6.00008 14Z" fill="#6D6D6D"/>
-</svg>`
+export const Marca = `
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+  <path  stroke="currentColor"  fill-rule="evenodd" clip-rule="evenodd" d="M11.0001 16.2708L5.34243 19.2454L6.42318 12.9451L1.83984 8.48373L8.16484 7.56706L10.9937 1.83514L13.8225 7.56706L20.1475 8.48373L15.5642 12.9451L16.6449 19.2454L11.0001 16.2708Z"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+  <path  stroke="currentColor"  fill-rule="evenodd" clip-rule="evenodd" d="M11.0001 16.2708L5.34243 19.2454L6.42318 12.9451L1.83984 8.48373L8.16484 7.56706L10.9937 1.83514L13.8225 7.56706L20.1475 8.48373L15.5642 12.9451L16.6449 19.2454L11.0001 16.2708Z"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
 
-export const dashboard = `
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="36" viewBox="0 0 32 36" fill="none">
-<g filter="url(#filter0_d_599_3537)">
-<mask id="mask0_599_3537" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
-<rect width="32" height="32" fill="#D9D9D9"/>
-</mask>
-<g mask="url(#mask0_599_3537)">
-<path d="M6.66667 28C5.93333 28 5.30556 27.7389 4.78333 27.2167C4.26111 26.6944 4 26.0667 4 25.3333V6.66667C4 5.93333 4.26111 5.30556 4.78333 4.78333C5.30556 4.26111 5.93333 4 6.66667 4H25.3333C26.0667 4 26.6944 4.26111 27.2167 4.78333C27.7389 5.30556 28 5.93333 28 6.66667V25.3333C28 26.0667 27.7389 26.6944 27.2167 27.2167C26.6944 27.7389 26.0667 28 25.3333 28H6.66667ZM6.66667 25.3333H14.6667V6.66667H6.66667V25.3333ZM17.3333 25.3333H25.3333V16H17.3333V25.3333ZM17.3333 13.3333H25.3333V6.66667H17.3333V13.3333Z" fill="#48D64C"/>
-</g>
+export const Dashboard = `
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+<path d="M17.4167 7.98419L12.5281 4.18186C11.6456 3.49525 10.4095 3.49525 9.52696 4.18186L4.63746 7.98419C4.042 8.44726 3.69386 9.15944 3.69421 9.91377V16.5138C3.69421 17.5263 4.51503 18.3471 5.52755 18.3471H16.5275C17.5401 18.3471 18.3609 17.5263 18.3609 16.5138V9.91377C18.3609 9.15936 18.0125 8.44711 17.4167 7.98419" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.6667 13.7499C12.6409 14.9718 9.35737 14.9718 7.33337 13.7499" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+export const Logo = `
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="27" viewBox="0 0 29 27" fill="none">
+<path d="M27.9185 8.66489C27.4228 6.94351 26.4846 5.31689 25.1093 3.95874C23.7393 2.60585 22.1028 1.68989 20.3544 1.20032C19.0377 0.831834 17.6784 0.694966 16.3191 0.816041C18.8191 1.03187 21.2446 2.0847 23.1583 3.96927C26.7405 7.50677 27.3535 12.8657 24.9867 17.0191C25.7276 13.5342 24.7361 9.75983 21.9855 7.04353C18.2168 3.32178 12.3637 2.85327 8.07791 5.66959C7.47022 6.06966 6.89984 6.52764 6.35612 7.05932L3.23237 10.1441C1.86239 11.497 0.924201 13.1131 0.428452 14.8397C-0.141926 16.8085 -0.141926 18.9089 0.423121 20.8619C0.91887 22.5938 1.85706 24.2152 3.22704 25.5681C4.59701 26.9209 6.26017 27.8527 8.00328 28.3423C9.31462 28.716 10.6899 28.8476 12.0546 28.7266C9.54917 28.5107 7.10241 27.4579 5.19404 25.5681C1.61185 22.0306 1.00416 16.6769 3.36563 12.5235C2.61934 16.0084 3.62683 19.7722 6.36145 22.4727C10.1462 26.2103 15.9832 26.6788 20.2691 23.873C20.8768 23.4729 21.4578 23.015 21.9909 22.4885L25.1199 19.3985C26.4899 18.0456 27.4281 16.419 27.9239 14.6976C28.4942 12.7288 28.4942 10.6337 27.9239 8.66489H27.9185ZM18.0782 18.6247C15.9246 20.7514 12.417 20.7514 10.2688 18.6247C8.10456 16.4979 8.10456 13.0341 10.2635 10.9074C12.417 8.7807 15.9246 8.7807 18.0835 10.9074C20.2318 13.0341 20.2318 16.4979 18.0782 18.6247Z" fill="black"/>
+</svg>
+`;
+
+export const SignUp = `
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="31" viewBox="0 0 35 31" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.375 4.125V10.625H23.625V4.125C23.625 3.23125 23.3068 2.46615 22.6703 1.82969C22.0339 1.19323 21.2687 0.875 20.375 0.875H4.125C3.23125 0.875 2.46615 1.19323 1.82969 1.82969C1.19323 2.46615 0.875 3.23125 0.875 4.125V26.875C0.875 27.7687 1.19323 28.5339 1.82969 29.1703C2.46615 29.8068 3.23125 30.125 4.125 30.125H20.375C21.2687 30.125 22.0339 29.8068 22.6703 29.1703C23.3068 28.5339 23.625 27.7687 23.625 26.875V20.375H20.375V26.875H4.125V4.125H20.375Z" fill="black"/>
+<path d="M28.7437 17.125H9V13.875H28.7437L26.225 11.3563L28.5 9L35 15.5L28.5 22L26.225 19.6438L28.7437 17.125Z" fill="#48D64C"/>
+</svg>`;
+
+export const AddProducts = `
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+<circle cx="11" cy="11" r="8.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="11" cy="11" r="8.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.25 11H13.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.25 11H13.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 8.25V13.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 8.25V13.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+export const ListProducts = `
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+<path d="M11 2.75L18.3333 6.875V15.125L11 19.25L3.66663 15.125V6.875L11 2.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 2.75L18.3333 6.875V15.125L11 19.25L3.66663 15.125V6.875L11 2.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 11L18.3333 6.875" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 11L18.3333 6.875" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 11V19.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 11V19.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 11L3.66663 6.875" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 11L3.66663 6.875" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
+
+export const Administrar = `
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+<g filter="url(#filter0_d_1239_300)">
+<circle cx="14" cy="11" r="8.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="14" cy="11" r="8.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="14" cy="9.16663" rx="2.75" ry="2.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="14" cy="9.16663" rx="2.75" ry="2.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.65393 17.2782C9.11982 15.7276 10.5475 14.6661 12.1666 14.6666H15.8333C17.4545 14.6661 18.8837 15.7303 19.3478 17.2837" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.65393 17.2782C9.11982 15.7276 10.5475 14.6661 12.1666 14.6666H15.8333C17.4545 14.6661 18.8837 15.7303 19.3478 17.2837" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
-<filter id="filter0_d_599_3537" x="-4" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_1239_300" x="-1" y="0" width="30" height="30" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
 <feGaussianBlur stdDeviation="2"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_599_3537"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_599_3537" result="shape"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1239_300"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1239_300" result="shape"/>
 </filter>
 </defs>
 </svg>
-`
+`;
 
-export const Logo = `
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 32 30" fill="none">
-<path d="M31.0991 8.90191C30.5469 6.96021 29.5018 5.12539 27.9698 3.59341C26.4438 2.06736 24.6209 1.03416 22.6732 0.481938C21.2065 0.0662836 19.6924 -0.0881024 18.1782 0.0484699C20.9631 0.291925 23.6648 1.47951 25.7966 3.60529C29.7868 7.59557 30.4697 13.6404 27.8333 18.3254C28.6586 14.3945 27.5542 10.137 24.4902 7.07303C20.2921 2.87492 13.7723 2.34645 8.99818 5.52323C8.32126 5.97452 7.6859 6.49111 7.08023 7.09085L3.60061 10.5705C2.07456 12.0965 1.02949 13.9195 0.477263 15.8671C-0.158095 18.0879 -0.158094 20.4571 0.471325 22.6601C1.02355 24.6137 2.06863 26.4425 3.59467 27.9686C5.12072 29.4946 6.97335 30.5456 8.91505 31.0979C10.3758 31.5195 11.9078 31.6679 13.4279 31.5313C10.637 31.2879 7.91154 30.1003 5.78577 27.9686C1.79548 23.9783 1.11856 17.9394 3.74906 13.2544C2.91775 17.1853 4.04002 21.4309 7.08617 24.4771C11.3021 28.693 17.8041 29.2215 22.5782 26.0566C23.2551 25.6053 23.9024 25.0887 24.4962 24.4949L27.9817 21.0093C29.5078 19.4833 30.5528 17.6485 31.1051 15.7068C31.7404 13.486 31.7404 11.1227 31.1051 8.90191H31.0991ZM20.1377 20.1365C17.7388 22.5354 13.8316 22.5354 11.4387 20.1365C9.02787 17.7375 9.02787 13.8304 11.4327 11.4315C13.8316 9.03255 17.7388 9.03255 20.1437 11.4315C22.5366 13.8304 22.5366 17.7375 20.1377 20.1365Z" fill="black"/>
-</svg>
-`
-
-export const SignUp = `
-<svg xmlns="http://www.w3.org/2000/svg" width="35" height="31" viewBox="0 0 35 31" fill="none">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M20.375 4.125V10.625H23.625V4.125C23.625 3.23125 23.3068 2.46615 22.6703 1.82969C22.0339 1.19323 21.2687 0.875 20.375 0.875H4.125C3.23125 0.875 2.46615 1.19323 1.82969 1.82969C1.19323 2.46615 0.875 3.23125 0.875 4.125V26.875C0.875 27.7687 1.19323 28.5339 1.82969 29.1703C2.46615 29.8068 3.23125 30.125 4.125 30.125H20.375C21.2687 30.125 22.0339 29.8068 22.6703 29.1703C23.3068 28.5339 23.625 27.7687 23.625 26.875V20.375H20.375V26.875H4.125V4.125H20.375Z" fill="black"/>
-<path d="M28.7437 17.125H9V13.875H28.7437L26.225 11.3563L28.5 9L35 15.5L28.5 22L26.225 19.6438L28.7437 17.125Z" fill="#48D64C"/>
-</svg>`
+export const Roles = `
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.46458 3.95725C9.85508 2.34758 12.1449 2.34758 12.5354 3.95725C12.6543 4.44772 13.0002 4.85194 13.4664 5.0451C13.9327 5.23826 14.4631 5.19713 14.894 4.93442C16.3084 4.07275 17.9282 5.69158 17.0665 7.10692C16.8042 7.53762 16.7631 8.06766 16.9561 8.5336C17.149 8.99954 17.5527 9.34542 18.0428 9.46458C19.6524 9.85508 19.6524 12.1449 18.0428 12.5354C17.5523 12.6543 17.1481 13.0002 16.9549 13.4664C16.7617 13.9327 16.8029 14.4631 17.0656 14.894C17.9272 16.3084 16.3084 17.9282 14.8931 17.0665C14.4624 16.8042 13.9323 16.7631 13.4664 16.9561C13.0005 17.149 12.6546 17.5527 12.5354 18.0428C12.1449 19.6524 9.85508 19.6524 9.46458 18.0428C9.34574 17.5523 8.9998 17.1481 8.53357 16.9549C8.06734 16.7617 7.53689 16.8029 7.106 17.0656C5.69158 17.9272 4.07183 16.3084 4.9335 14.8931C5.19584 14.4624 5.23687 13.9323 5.04393 13.4664C4.851 13.0005 4.44727 12.6546 3.95725 12.5354C2.34758 12.1449 2.34758 9.85508 3.95725 9.46458C4.44772 9.34574 4.85194 8.9998 5.0451 8.53357C5.23826 8.06734 5.19713 7.53689 4.93442 7.106C4.07275 5.69158 5.69158 4.07183 7.10692 4.9335C8.02358 5.49083 9.21158 4.99767 9.46458 3.95725Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.46458 3.95725C9.85508 2.34758 12.1449 2.34758 12.5354 3.95725C12.6543 4.44772 13.0002 4.85194 13.4664 5.0451C13.9327 5.23826 14.4631 5.19713 14.894 4.93442C16.3084 4.07275 17.9282 5.69158 17.0665 7.10692C16.8042 7.53762 16.7631 8.06766 16.9561 8.5336C17.149 8.99954 17.5527 9.34542 18.0428 9.46458C19.6524 9.85508 19.6524 12.1449 18.0428 12.5354C17.5523 12.6543 17.1481 13.0002 16.9549 13.4664C16.7617 13.9327 16.8029 14.4631 17.0656 14.894C17.9272 16.3084 16.3084 17.9282 14.8931 17.0665C14.4624 16.8042 13.9323 16.7631 13.4664 16.9561C13.0005 17.149 12.6546 17.5527 12.5354 18.0428C12.1449 19.6524 9.85508 19.6524 9.46458 18.0428C9.34574 17.5523 8.9998 17.1481 8.53357 16.9549C8.06734 16.7617 7.53689 16.8029 7.106 17.0656C5.69158 17.9272 4.07183 16.3084 4.9335 14.8931C5.19584 14.4624 5.23687 13.9323 5.04393 13.4664C4.851 13.0005 4.44727 12.6546 3.95725 12.5354C2.34758 12.1449 2.34758 9.85508 3.95725 9.46458C4.44772 9.34574 4.85194 8.9998 5.0451 8.53357C5.23826 8.06734 5.19713 7.53689 4.93442 7.106C4.07275 5.69158 5.69158 4.07183 7.10692 4.9335C8.02358 5.49083 9.21158 4.99767 9.46458 3.95725Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="11" cy="11" r="2.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="11" cy="11" r="2.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
