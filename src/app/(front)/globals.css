@@ -138,3 +138,15 @@
     @apply text-[#555555]  text-lg;
   }
 }
+
+
+[data-callapce="true"]{
+  width: 0;
+}
+
+[data-callapce="true"] .sidebar_name{
+  display: none;
+}
+.sidebar_name{
+  transition: all 700ms ease-in;
+}
