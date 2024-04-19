@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "../(front)/globals.css";
-import "./globals.css";
+// import "./globals.css";
 
 import CardSideNav from "./components/CardSideNav";
 
@@ -16,10 +16,10 @@ export default function Layout({ children }) {
         <html lang="en">
             <body className={inter.className}>
                 <div className="flex  flex-col md:flex-row md:overflow-hidden bg-[#FAFAFA]">
-                    <div className="w-full flex-none md:w-80 overflow-y-auto h-screen bg-white">
+                    <div className="">
                         <CardSideNav/>
                     </div>
-                    <div className="flex-grow p-6 md:overflow-auto md:p-12">{children}</div>
+                    <div className="flex-grow p-6 md:overflow-auto md:p-8">{children}</div>
                 </div>      
             </body>
         </html>

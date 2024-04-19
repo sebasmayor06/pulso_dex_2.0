@@ -1,20 +1,34 @@
 .flex:hover h2 {
-    color: #23272E;
-    transition: all;
-    transition: color 0.3s ease;
-    
-  }
+  color: #23272e;
+  transition: all;
+  transition: color 0.3s ease;
+}
 
 .flex:hover div {
-    /* background-color: red; */
-    color: #23272E;
-    transition: all;
-    transition: color 0.3s ease;
-    
+  /* background-color: red; */
+  color: #23272e;
+  transition: all;
+  transition: color 0.3s ease;
 }
 
-.svgContainer{
-    color: #8B909A;
+.svgContainer {
+  color: #8b909a;
 }
 
- 
+.svgContainer:hover {
+  color: #23272e;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
