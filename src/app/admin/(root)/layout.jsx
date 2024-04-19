@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import "../(front)/globals.css";
+import "../../(front)/globals.css";
 // import "./globals.css";
 
 import CardSideNav from "./components/CardSideNav";
