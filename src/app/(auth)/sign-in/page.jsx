@@ -21,9 +21,9 @@ export default function SignInPage() {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="grid grid-cols-2 gap-40 h-full">
+      <div className="grid grid-cols-2 gap-28 h-full">
         <div>
-          <div className="flex justify-center w-[30rem] h-full p-10 ">
+          <div className="flex justify-center md:w-[30rem] xl:w-[40rem]  h-full p-10 ">
             <Image
               src="/sign/sign-in.png"
               alt="Imagen de desarrollo"
@@ -42,8 +42,8 @@ export default function SignInPage() {
               Iniciar seción
             </h1>
            
-            <div className="mb-4 flex items-center">
-              <div className="absolute" dangerouslySetInnerHTML={{ __html: Gmail }} />
+            <div className="mb-6 flex items-center">
+              <div className="absolute pl-2" dangerouslySetInnerHTML={{ __html: Gmail }} />
               <input
                 type="email"
                 id="email"
@@ -51,11 +51,11 @@ export default function SignInPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-8"
               />
             </div>
-            <div className="mb-4 flex items-center">
-              <div className="" dangerouslySetInnerHTML={{ __html: Password }} />
+            <div className="mb-6 flex items-center">
+              <div className="absolute pl-2" dangerouslySetInnerHTML={{ __html: Password }} />
               <input
                 type="text"
                 id="password"
@@ -63,13 +63,17 @@ export default function SignInPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-8"
               />
+            </div>
+            <div className="flex mb-6 ">
+              <input type="checkbox" name=""  placeholder="recordarme"  id="" />
+              <h3 className="text-[#9CA3C1] pl-[.7rem]">Recordarme</h3>
             </div>
             <div className="flex items-center justify-between">
               <button
                 type="submit"
-                className="bg-[#48D64C] hover:bg-[#2d8830] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                className="bg-[#48D64C] hover:bg-[#2d8830] text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline w-full"
               >
                 Enviar
               </button>
