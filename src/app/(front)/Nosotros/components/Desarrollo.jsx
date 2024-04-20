@@ -17,9 +17,9 @@ const Desarrollo = ({ setShowModal2 }) => {
               en la cadena de suministro y el uso de materiales sostenibles.
             </p>
             <button
-              className="border-2 border-black  backdrop:blur bg-white xs:text-lg 
+              className="border-2 border-color-btn  backdrop:blur bg-white xs:text-lg  text-color-btn
                     md:text-xl font-bold md:p-3 rounded-full hover:bg-gray-400 
-                    hover:bg-opacity-50 w-40 h-14 md:w-64 md:h-20 "
+                    hover:bg-opacity-50 w-40 h-14 md:w-64 md:h-20  transition-all duration-300 ease-in hover:bg-[#1a19198a] hover:text-black hover:border-black "
               // onClick={() => setShowModal2()}
             >
               Aprende Más

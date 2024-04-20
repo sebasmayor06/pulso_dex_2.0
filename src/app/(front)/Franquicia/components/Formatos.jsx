@@ -74,7 +74,7 @@ const Formatos = ({
         </div>
       </div>
       <div className="px-2 pb-8">
-        <button className="w-full py-4 xs:text-lg text-[#292930] font-semibold rounded-[50px] border-2 bg-white hover:bg-black hover:text-white transition duration-300">
+        <button className="w-full py-4 xs:text-lg text-[#292930] font-semibold rounded-[50px] border-2 bg-white transition-all duration-300 ease-in hover:bg-[#1a1919b0] hover:text-white ">
           comprar
         </button>
       </div>
