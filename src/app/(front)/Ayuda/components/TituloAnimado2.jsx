@@ -12,8 +12,8 @@ export default function TituloAnimado2() {
     <div ref={ref} className={`overflow-x-hidden shadow-xl bg-azulInicio ${style.bg1}`}>
       <div className={`flex justify-center items-center w-screen h-screen overflow-hidden left-0 bg-inherit`}>
        
-        <div className='flex flex-col gap-5'>
-        <h1 className={` font-bold text-6xl animate-fade-left ${inView?'animate-once animate-duration-500 animate-ease-in':''}`}>
+        <div className='flex justify-center items-center flex-col gap-5'>
+        <h1 className={` font-bold text-4xl md:w-full w-64 text-center md:text-6xl animate-fade-left ${inView?'animate-once animate-duration-500 animate-ease-in':''}`}>
         Construyamos algo increíble juntos
         </h1>
         </div>

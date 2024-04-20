@@ -12,7 +12,7 @@ export default function Form3() {
 
   const { ref, inView } = useInView({
     threshold: 0.5,
-    triggerOnce: false,
+    triggerOnce: true,
   });
   const validateMessages = {
     required: "${label} is required!",
@@ -58,9 +58,9 @@ export default function Form3() {
 
   return (
     <div ref={ref} className="overflow-x-hidden shadow-xl bg-white">
-      <div className="flex flex-col justify-center items-center w-screen h-[750px] overflow-hidden left-0 bg-white gap-5">
-        <div className="flex justify-center items-center h-[20%] mb-10">
-          <div className="flex flex-row w-full gap-5 mt-32">
+      <div className="flex flex-col justify-center items-center w-screen h-[1000px] md:h-[750px] overflow-hidden left-0 bg-white gap-5">
+        <div className="flex justify-center items-center h-[30%] md:h-[20%] mb-10">
+          <div className="flex flex-col md:flex-row w-full gap-5 mt-32">
             <div className={`bg-azulInicio w-60 h-44 rounded-3xl flex justify-center items-center ${inView?'animate-fade-right animate-once animate-duration-1000 animate-delay-100 animate-ease-linear':'hidden'}`}>
               <div className="bg-white w-52 h-36 rounded-3xl p-2">
                 <button className="h-8 w-24 rounded-full m-2 bg-azulInicio font-bold text-sm">
@@ -97,8 +97,8 @@ export default function Form3() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center h-[80%]">
-          <div className={`bg-azulInicio p-6 rounded-3xl ${inView?'animate-fade animate-once animate-duration-1000 animate-delay-100 animate-ease-linear':'animate-jump-out animate-once animate-duration-1000 animate-delay-100 animate-ease-linear'}`}>
+        <div className="flex justify-center items-center w-[90%] h-[70%] md:h-[80%]">
+          <div className={`bg-azulInicio p-6 rounded-3xl ${inView?'animate-fade animate-once animate-duration-1000 animate-delay-100 animate-ease-linear':''}`}>
             <Form
               labelAlign="top" // Coloca las etiquetas encima de los campos de entrada
               labelCol={{ span: 24 }} // Usa todo el ancho disponible para las etiquetas

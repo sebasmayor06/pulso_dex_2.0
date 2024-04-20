@@ -6,6 +6,12 @@
     background-color: #B9CEFF;
     width: 15%;
 }
+@media screen and (max-width: 600px) {
+    .inicio {
+        width: 100%; /* Cambiar el ancho al 100% en pantallas pequeñas */
+        min-height: 10%;
+    }
+}
 .container{
     position: relative;
     width: 100%;

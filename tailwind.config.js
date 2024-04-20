@@ -36,6 +36,9 @@ module.exports = {
         texto:'#6F6F6F',
         card3: '#E5F5F9',
         card4: '#FDEEC4',
+        bgBene: '#100A55',
+        lilaBene: '#7065F0'
+
       },
       animation: {
         slideInUp: 'slideInUp 1s ease-out forwards',
