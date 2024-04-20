@@ -105,27 +105,13 @@ export const ListProducts = `
 </svg>`;
 
 export const Administrar = `
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
-<g filter="url(#filter0_d_1239_300)">
-<circle cx="14" cy="11" r="8.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="14" cy="11" r="8.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<ellipse cx="14" cy="9.16663" rx="2.75" ry="2.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<ellipse cx="14" cy="9.16663" rx="2.75" ry="2.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.65393 17.2782C9.11982 15.7276 10.5475 14.6661 12.1666 14.6666H15.8333C17.4545 14.6661 18.8837 15.7303 19.3478 17.2837" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.65393 17.2782C9.11982 15.7276 10.5475 14.6661 12.1666 14.6666H15.8333C17.4545 14.6661 18.8837 15.7303 19.3478 17.2837" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<filter id="filter0_d_1239_300" x="-1" y="0" width="30" height="30" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1239_300"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1239_300" result="shape"/>
-</filter>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+<circle cx="11" cy="11" r="8.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="11" cy="11" r="8.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="11" cy="9.16663" rx="2.75" ry="2.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="11" cy="9.16663" rx="2.75" ry="2.75" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.65393 17.2782C6.11982 15.7276 7.54754 14.6661 9.1666 14.6666H12.8333C14.4545 14.6661 15.8837 15.7303 16.3478 17.2837" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.65393 17.2782C6.11982 15.7276 7.54754 14.6661 9.1666 14.6666H12.8333C14.4545 14.6661 15.8837 15.7303 16.3478 17.2837" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 

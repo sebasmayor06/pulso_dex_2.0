@@ -24,10 +24,10 @@ const CardSideNav = () => {
       >
         <div className="flex h-full flex-col px-4  w-full sidebar_name">
           <div className=" ">
-            <div className="flex  justify-between pb-10 items-center">
+            <div className="flex  justify-between  items-center">
               <Link
                 className=" flex h-20  rounded-md   md:h-30 items-center  "
-                href="/"
+                href="/admin"
               >
                 <div
                   dangerouslySetInnerHTML={{ __html: Logo }}
