@@ -17,7 +17,7 @@ const Mision = ({ setShowModal2 }) => {
                     <h1 className="title-secundary xs:mb-4 mb-2">Nuestra Misión</h1>
                     <p className=" text-color-black  md:text-xl xs:text-lg text-[0.8rem]  xs:mb-8 mb-4">En Pulso Dex, nos dedicamos a simplificar y potenciar la experiencia de compra en línea. Nuestro enfoque está en proporcionar una plataforma intuitiva y eficiente que automatice las ventas y la distribución de productos con IA, brindando comodidad y confianza en cada transacción.</p>
                     <button
-                        className="bg-azulInicio border-2  rounded-md xs:text-sm font-semibold text-color-btn p-2 hover:bg-white hover:text-black w-36  xs:w-40 h-12  md:w-64 md:h-20 text-[0.8rem]  md:text-xl rounded-l-full rounded-r-full"
+                        className="bg-azulInicio border-2 hover:border-[#000000] border-color-btn  rounded-md xs:text-sm font-semibold text-color-btn p-2  w-36  xs:w-40 h-12  md:w-64 md:h-20 text-[0.8rem]  md:text-xl rounded-l-full rounded-r-full transition-all duration-300 ease-out hover:bg-[#778ec4bd] hover:text-black "
                         onClick={() => setShowModal2()}
 
                     >
