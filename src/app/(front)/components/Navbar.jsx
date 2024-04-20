@@ -37,7 +37,7 @@ export default function Navbar() {
       <nav
         className={`${visible || isClick ?"":"hidden"}`}
       >
-        <div className={` fixed w-full z-50 mx-auto px-4 sm:px-6 lg:px-1 backdrop-blur-md border-b`}>
+        <div className={` fixed w-full z-50 mx-auto px-4 sm:px-6 lg:px-1 backdrop-blur-md border-b `}>
           <div className="flex items-center justify-between  h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
@@ -50,7 +50,7 @@ export default function Navbar() {
                   href="/"
                   className={`
                   ${pathname === "/" ? "text-white border border-white rounded-lg p-2 font-bold bg-black" : "text-black rounded-lg p-2 font-bold"}
-                  transition duration-500 ease-in-out  hover:text-verdeButtom hover:bg-black
+                  transition duration-500 ease-in-out  hover:text-verdeButtom hover:bg-[#292930]
                 `}
                 >
                   Inicio
@@ -59,7 +59,7 @@ export default function Navbar() {
                   href="/Soluciones"
                   className={`
                   ${pathname === "/Soluciones" ? "text-white border border-white rounded-lg p-2 font-bold bg-black" : "text-black rounded-lg p-2 font-bold"}
-                  transition duration-500 ease-in-out  hover:text-verdeButtom hover:bg-black
+                  transition duration-500 ease-in-out  hover:text-verdeButtom hover:bg-[#292930]
                 `}
                 >
                   Soluciones
@@ -68,7 +68,7 @@ export default function Navbar() {
                   href="/Ayuda"
                   className={`
                   ${pathname === "/Ayuda" ? "text-white border border-white rounded-lg p-2 font-bold bg-black" : "text-black rounded-lg p-2 font-bold"}
-                  transition duration-500 ease-in-out  hover:text-verdeButtom hover:bg-black
+                  transition duration-500 ease-in-out  hover:text-verdeButtom hover:bg-[#292930]
                 `}
                 >
                   Ayuda
@@ -77,7 +77,7 @@ export default function Navbar() {
                   href="/Nosotros"
                   className={`
                   ${pathname === "/Nosotros" ? "text-white border border-white rounded-lg p-2 font-bold bg-black" : "text-black rounded-lg p-2 font-bold"}
-                  transition duration-500 ease-in-out  hover:text-verdeButtom hover:bg-black
+                  transition duration-500 ease-in-out  hover:text-verdeButtom hover:bg-[#292930]
                 `}
                 >
                   Nosotros

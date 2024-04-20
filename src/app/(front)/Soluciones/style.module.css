@@ -110,3 +110,8 @@
     background: rgb(185,206,255);
     background: linear-gradient(108deg, rgba(185,206,255,0.9585084033613446) 34%, rgba(53,255,158,1) 100%);
 }
+
+.bg2{
+    background: rgb(185,206,255);
+    background: linear-gradient(108deg,  rgba(53,255,158,1) 40%, rgba(185,206,255,0.9585084033613446));
+}

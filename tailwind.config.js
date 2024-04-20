@@ -6,12 +6,14 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    
     screens: {
       sm: '480px',
       md: '768px',
       lg: '976px',
       xl: '1440px',
     },
+    
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -26,7 +28,14 @@ module.exports = {
       width: {
         "1440px": "1440px",
       },
+      screens: {
+        xs: "350px",
+      },
       colors: {
+        "color-primary": "#000929",
+        "color-white": "#d0d0d0",
+        "color-black": "#3a3a3a",
+        "color-btn": "#292930",
         azulParticipa: '#B9E6FF',
         gris: "#8C8C8C",
         azulInicio: '#B9CEFF',
@@ -36,9 +45,14 @@ module.exports = {
         texto:'#6F6F6F',
         card3: '#E5F5F9',
         card4: '#FDEEC4',
+<<<<<<< HEAD
         bgBene: '#100A55',
         lilaBene: '#7065F0'
 
+=======
+
+        "dash-primary": "#8B909A",
+>>>>>>> 05720ea6f6a431165424c9f592949864eb6ae592
       },
       animation: {
         slideInUp: 'slideInUp 1s ease-out forwards',

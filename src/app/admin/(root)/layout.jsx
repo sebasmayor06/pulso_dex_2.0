@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
-import "../(front)/globals.css";
-import SideNav from "./components/SideNav";
+import "../../(front)/globals.css";
+// import "./globals.css";
+
+import CardSideNav from "./components/CardSideNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,11 +15,11 @@ export default function Layout({ children }) {
     return (
         <html lang="en">
             <body className={inter.className}>
-                <div className="flex  flex-col md:flex-row md:overflow-hidden">
-                    <div className="w-full flex-none md:w-80 border-2 border-black overflow-y-auto h-screen">
-                        <SideNav/>
+                <div className="flex  flex-col md:flex-row md:overflow-hidden bg-[#FAFAFA]">
+                    <div className="">
+                        <CardSideNav/>
                     </div>
-                    <div className="flex-grow p-6 md:overflow-auto md:p-12 border-2 border-red-700">{children}</div>
+                    <div className="flex-grow p-6 md:overflow-auto md:p-8">{children}</div>
                 </div>      
             </body>
         </html>
