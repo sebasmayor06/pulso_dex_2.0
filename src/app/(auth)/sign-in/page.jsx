@@ -2,6 +2,9 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Gmail, Password } from "../utils/svg";
+import { LogoWhite } from "@/app/admin/(root)/utils/svg";
+import styles from "@/app/admin/(root)/components/SideNav.module.css";
+
 export default function SignInPage() {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -23,7 +26,15 @@ export default function SignInPage() {
     <div className="flex justify-center items-center h-screen">
       <div className="grid grid-cols-2 gap-28 h-full">
         <div>
-          <div className="flex justify-center md:w-[30rem] xl:w-[40rem]  h-full p-10 ">
+          <div className="flex justify-center md:w-[30rem] xl:w-[40rem]  h-full p-10 relative ">
+            <div className="absolute left-20 top-20">
+              <div className="flex items-center">
+                <div dangerouslySetInnerHTML={{ __html: LogoWhite }} />
+                <h1 className="font-semibold text-2xl pl-1 text-white">
+                  Pulsodex
+                </h1>
+              </div>
+            </div>
             <Image
               src="/sign/sign-in.png"
               alt="Imagen de desarrollo"
@@ -31,6 +42,9 @@ export default function SignInPage() {
               height={600}
               className="object-cover  rounded-[20px]"
             />
+            <div className="absolute bottom-32 left-20 w-56">
+              <p className="text-2xl text-white font-semibold">Conviértete en importador.</p>
+            </div>
           </div>
         </div>
         <div className="flex justify-center items-center">
@@ -41,9 +55,12 @@ export default function SignInPage() {
             <h1 className="text-[#232859] pb-8 text-3xl font-bold">
               Iniciar seción
             </h1>
-           
+
             <div className="mb-6 flex items-center">
-              <div className="absolute pl-2" dangerouslySetInnerHTML={{ __html: Gmail }} />
+              <div
+                className="absolute pl-2"
+                dangerouslySetInnerHTML={{ __html: Gmail }}
+              />
               <input
                 type="email"
                 id="email"
@@ -55,7 +72,10 @@ export default function SignInPage() {
               />
             </div>
             <div className="mb-6 flex items-center">
-              <div className="absolute pl-2" dangerouslySetInnerHTML={{ __html: Password }} />
+              <div
+                className="absolute pl-2"
+                dangerouslySetInnerHTML={{ __html: Password }}
+              />
               <input
                 type="text"
                 id="password"
@@ -67,7 +87,7 @@ export default function SignInPage() {
               />
             </div>
             <div className="flex mb-6 ">
-              <input type="checkbox" name=""  placeholder="recordarme"  id="" />
+              <input type="checkbox" name="" placeholder="recordarme" id="" />
               <h3 className="text-[#9CA3C1] pl-[.7rem]">Recordarme</h3>
             </div>
             <div className="flex items-center justify-between">
