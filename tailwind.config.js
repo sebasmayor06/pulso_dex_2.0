@@ -45,14 +45,11 @@ module.exports = {
         texto:'#6F6F6F',
         card3: '#E5F5F9',
         card4: '#FDEEC4',
-<<<<<<< HEAD
         bgBene: '#100A55',
-        lilaBene: '#7065F0'
+        lilaBene: '#7065F0',
 
-=======
 
         "dash-primary": "#8B909A",
->>>>>>> 05720ea6f6a431165424c9f592949864eb6ae592
       },
       animation: {
         slideInUp: 'slideInUp 1s ease-out forwards',

@@ -21,7 +21,7 @@ export default function NoPierdas({setShowModal2}) {
           </div>
           <button
               onClick={() => setShowModal2()}
-              className="bg-black rounded-lg text-sm md:text-xl font-bold text-white p-2 hover:bg-white hover:text-black w-44 h-16 md:w-64 md:h-20 rounded-l-full rounded-r-full"
+              className="bg-black rounded-lg text-sm md:text-xl font-bold text-white p-2 hover:bg-verdeButtom hover:text-black w-44 h-16 md:w-64 md:h-20 rounded-l-full rounded-r-full"
             >
               Agendar Demo
             </button>

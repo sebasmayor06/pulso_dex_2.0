@@ -141,7 +141,7 @@ export default function Navbar() {
                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 m-6 w-[80%]">
               <Link
                 href="/"
-                className="text-black block text-2xl hover:text-white rounded-lg p-2"
+                className="text-black block text-2xl hover:text-blue-400 font-bold rounded-lg p-2"
                 onClick={()=>setIsClick(false)}
               >
                 Inicio
@@ -149,7 +149,7 @@ export default function Navbar() {
               <div className="border-2 w-full border-slate-200"></div>
               <Link
                 href="/Soluciones"
-                className="text-black block text-2xl hover:text-white rounded-lg p-2"
+                className="text-black block text-2xl hover:text-blue-400 font-bold rounded-lg p-2"
                 onClick={()=>setIsClick(false)}
               >
                 Soluciones
@@ -158,7 +158,7 @@ export default function Navbar() {
 
               <Link
                 href="/Ayuda"
-                className="text-black block text-2xl hover:text-white rounded-lg p-2"
+                className="text-black block text-2xl hover:text-blue-400 font-bold rounded-lg p-2"
                 onClick={()=>setIsClick(false)}
               >
                 Ayuda
@@ -167,7 +167,7 @@ export default function Navbar() {
 
               <Link
                 href="/Nosotros"
-                className="text-black block text-2xl hover:text-white rounded-lg p-2"
+                className="text-black block text-2xl hover:text-blue-400 font-bold rounded-lg p-2"
                 onClick={()=>setIsClick(false)}
               >
                 Nosotros
