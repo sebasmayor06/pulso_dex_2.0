@@ -57,7 +57,7 @@ const CardsFromatos = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:mx-2 mx-3  md:max-w-[100rem]">
                     {
                         datos.map((dato, index) => (
-                            <div className=" ">
+                            <div className=" " key={index}>
 
                                 <Formatos
                                     image={dato.image}
@@ -69,7 +69,6 @@ const CardsFromatos = () => {
                                     p3={dato.p3}
                                     p4={dato.p4}
                                     modo={dato.modo}
-                                    key={index}
                                     id={dato.id}
                                 />
                             </div>

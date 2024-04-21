@@ -11,11 +11,9 @@ const Formatos = ({
   modo,
   volumen,
   peso,
-  key
 }) => {
   return (
     <div
-    key={key}
       className={`${
         id === 1
           ? "bg-[#B9CEFF] rounded-lg"
