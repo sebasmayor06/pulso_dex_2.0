@@ -47,6 +47,7 @@ module.exports = {
         card4: '#FDEEC4',
         bgBene: '#100A55',
         lilaBene: '#7065F0',
+
         "dash-primary": "#8B909A",
       },
       animation: {

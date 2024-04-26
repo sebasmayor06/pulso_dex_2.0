@@ -80,7 +80,7 @@ export default function HowItWorks({setShowModal2}) {
 
             <button
               onClick={() => setShowModal2()}
-              className="bg-black rounded-lg font-semibold text-white p-2 hover:bg-verdeButtom hover:text-black w-60 h-12 md:w-96 md:h-20 text-xs md:text-xl rounded-l-full rounded-r-full"
+              className="bg-black rounded-lg font-bold text-white p-2 hover:bg-verdeButtom hover:text-black w-60 h-12 md:w-96 md:h-20 text-xs md:text-xl rounded-l-full rounded-r-full"
               >
               Más Información sobre la Franquicia
               </button>

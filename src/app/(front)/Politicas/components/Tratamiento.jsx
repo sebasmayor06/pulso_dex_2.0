@@ -23,7 +23,7 @@ const Tratamiento = () => {
           <p className="text-parrafo">
             Pulso Dex o nosotros también podemos contratar plataformas
             publicitarias de terceros que se activan únicamente cuando sus
-            características técnicas (los denominados "píxeles") están
+            características técnicas (los denominados píxeles) están
             habilitadas a través de la Interfaz. Las plataformas publicitarias
             de terceros mencionadas pueden recopilar datos personales de los
             visitantes de la interfaz únicamente con el fin de optimizar sus

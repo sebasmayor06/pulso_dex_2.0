@@ -1,6 +1,6 @@
 "use client"
 
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import Desarrollo from "./components/Desarrollo";
 import Landing from "./components/Landing";
 import Mision from "./components/Mision";
@@ -8,7 +8,7 @@ import VisionCart from "./components/VisionCart";
 
 import Form from "../components/Form2";
 
-export default function pageNosotros() {
+export default function PageNosotros() {
 
   const [showModal, setShowModal] = useState(false)
 
