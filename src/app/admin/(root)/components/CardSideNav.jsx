@@ -54,15 +54,17 @@ const CardSideNav = () => {
                 <ul className="  ">
                   {datosNav
                     .filter((dato) => !idsExcluidos.includes(dato.id))
-                    .map((dato, index) => (
-                      <SideNav
-                        name={dato.name}
-                        href={dato.href}
-                        img={dato.img}
-                        key={index}
-                        isOpen={isOpen}
-                      />
-                    ))}
+                    .map((dato, index) => {
+                      return (
+                        <SideNav
+                          name={dato.name}
+                          href={dato.href}
+                          img={dato.img}
+                          key={index}
+                          isOpen={isOpen}
+                        />
+                      );
+                    })}
                 </ul>
               </section>
               <section className="pb-4">
