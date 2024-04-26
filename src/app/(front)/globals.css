@@ -137,6 +137,9 @@
   .text-parrafo {
     @apply text-[#555555]  text-lg;
   }
+  .inputForm {
+    @apply shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight  pl-8
+  }
 
 }
 

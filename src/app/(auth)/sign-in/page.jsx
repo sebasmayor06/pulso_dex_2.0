@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { Gmail, Password } from "../utils/svg";
 import { LogoWhite } from "@/app/admin/(root)/utils/svg";
-import styles from "@/app/admin/(root)/components/SideNav.module.css";
+// import styles from "@/app/admin/(root)/components/SideNav.module.css";
 
 export default function SignInPage() {
   const [password, setPassword] = useState("");
@@ -68,7 +68,7 @@ export default function SignInPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-8"
+                className="inputForm focus:outline-none focus:shadow-outline"
               />
             </div>
             <div className="mb-6 flex items-center">
@@ -83,7 +83,7 @@ export default function SignInPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline pl-8"
+                className="inputForm focus:outline-none focus:shadow-outline"
               />
             </div>
             <div className="flex mb-6 ">
