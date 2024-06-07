@@ -1,3 +1,7 @@
+.flexFocus h2,
+.flexFocus div {
+  color: #23272e !important;
+}
 .flex:hover h2 {
   color: #23272e;
   transition: all;
@@ -10,6 +14,8 @@
   transition: all;
   transition: color 0.3s ease;
 }
+
+
 
 .svgContainer {
   color: #8b909a;

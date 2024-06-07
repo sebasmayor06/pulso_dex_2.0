@@ -48,7 +48,6 @@ module.exports = {
         bgBene: '#100A55',
         lilaBene: '#7065F0',
 
-
         "dash-primary": "#8B909A",
       },
       animation: {

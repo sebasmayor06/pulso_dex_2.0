@@ -4,8 +4,8 @@ const CardsFromatos = () => {
     const datos = [
         {
             image: "/franquicia/formatos/logo.png",
-            price: "$5.000.000",
-            modo: "Lite",
+            price: 5000000,
+            modo: "lite",
             vulemen: "125.000 cm3",
             peso: "5 - 10 KG",
             p1: "Diversidad de productos: ofrecemos la oportunidad de vender una amplia gama de productos.",
@@ -17,8 +17,8 @@ const CardsFromatos = () => {
         },
         {
             image: "/franquicia/formatos/logo.png",
-            price: "$8.000.000",
-            modo: "Star",
+            price: 8000000,
+            modo: "star",
             vulemen: "512.000 cm3",
             peso: "8 - 12 KG",
             p1: "Diversidad de productos: ofrecemos la oportunidad de vender una amplia gama de productos.",
@@ -30,8 +30,8 @@ const CardsFromatos = () => {
         },
         {
             image: "/franquicia/formatos/logo.png",
-            price: "$18.000.000",
-            modo:"Primiun",
+            price: 18000000,
+            modo:"primiun",
             vulemen: "4,096 m3",
             peso: "12 - 30 KG",
             p1: "Diversidad de productos: ofrecemos la oportunidad de vender una amplia gama de productos.",

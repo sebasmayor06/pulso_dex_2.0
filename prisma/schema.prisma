@@ -1,0 +1,52 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String  @map("user_id")
+  type              String
+  provider          String
+  providerAccountId String  @map("provider_account_id")
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  // @@map("accounts")
+
+  @@unique([provider, providerAccountId])
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String?   @unique(map: "User_email_key")
+  password      String?
+  name          String?
+  createdAt     DateTime  @default(now())
+  emailVerified DateTime? @map("email_verified")
+  updatedAt     DateTime  @default(now())
+  image         String?
+  account       Account[]
+}
+
+model FormPayment {
+  id String @id @default(cuid())
+  codigo String?
+  email String?
+  phone String?
+  methodPayment String?
+  nameTarjeta String?
+  pais String?
+  condigoZip String?
+  
+}
