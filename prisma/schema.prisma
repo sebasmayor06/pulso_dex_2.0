@@ -39,14 +39,38 @@ model User {
   account       Account[]
 }
 
-model FormPayment {
-  id String @id @default(cuid())
-  codigo String?
-  email String?
-  phone String?
-  methodPayment String?
-  nameTarjeta String?
-  pais String?
-  condigoZip String?
-  
+model VerificationToken {
+  id      String   @id @default(cuid())
+  email   String
+  token   String   @unique
+  expires DateTime
+
+  @@unique([email, token])
+}
+
+// model DetallesPago {
+//   id               String      @id @default(cuid())
+//   formPaymentId    String      @unique @map("formPayment_id")
+//   emailPaypal      String?
+//   direccionEnvio   String?
+//   numeroTarjeta    String?
+//   codigoSeguridad  String?
+//   fechaVencimiento String?
+//   formPayment      Payment @relation(fields: [formPaymentId], references: [id])
+// }
+
+model Payment {
+  id            String   @id @default(cuid())
+  paypalId      String?
+  email         String?
+  celular       String?
+  medioDePago   String?
+  nombreTarjeta String?
+  pais          String?
+  codigoZip     String?
+  montoTotal    Decimal
+  modoTarjeta   String
+  estadoPago    String?
+  createdAt     DateTime @default(now())
+  updateAt      DateTime @updatedAt
 }

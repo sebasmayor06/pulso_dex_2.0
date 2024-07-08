@@ -1,7 +1,7 @@
-import { db } from "../../../libs/db";
+import { db } from "../../../../libs/db";
 import { NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
-import { getUserEmail } from "../../../(auth)/data/user";
+import { getUserEmail } from "../data/user";
 
 export async function POST(request) {
   try {
@@ -10,6 +10,7 @@ export async function POST(request) {
     if (!username || !email || !password) {
       return NextResponse.json({ error: "dato ingresado invalido" }, 400);
     }
+
 
     const hashedPassword = await bcrypt.hash(password, 10);
 

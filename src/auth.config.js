@@ -4,8 +4,8 @@ import Credentials from "next-auth/providers/credentials";
 import Google from "next-auth/providers/google";
 
 
-import { LoginSchema } from "./app/validations/usersSchema";
-import { getUserEmail } from "./app/(auth)/data/user";
+import { loginSchema } from "./validations/usersSchema";
+import { getUserEmail } from "./app/api/auth/data/user";
 
 export default {
   providers: [
@@ -16,7 +16,7 @@ export default {
 
     Credentials({
       async authorize(credentials) {
-        const validateFields = LoginSchema.safeParse(credentials);
+        const validateFields = loginSchema.safeParse(credentials);
 
         if (validateFields.success) {
           const { email, password } = validateFields.data;

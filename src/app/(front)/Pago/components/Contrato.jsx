@@ -54,13 +54,13 @@ export const Contrato = () => {
       <div>
         <h2 className="text-xl font-bold mb-2">Código de referido</h2>
         <div className="relative flex items-center">
-          <div className="absolute pl-2" dangerouslySetInnerHTML={{ __html: Ticket }} />
+          <div className="absolute  pl-2" dangerouslySetInnerHTML={{ __html: Ticket }} />
 
           <input
             type="text"
-            className="border-2 border-[#4B7DF3] rounded-xl px-4 py-2 w-full"
+            className="border-2 border-[#4B7DF3] rounded-xl px-4 py-2 w-full pl-10"
           />
-          <span className="absolute right-2">Aplicar</span>
+          <button className="absolute right-2 text-[#4B7DF3]">Aplicar</button>
         </div>
       </div>
     </div>

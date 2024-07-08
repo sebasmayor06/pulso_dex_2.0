@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,10 +15,17 @@ import useFranquisia from "../../../../store/payment/franquisia";
 
 export const Franquisia = () => {
   const { precios, precio, images } = useFranquisia();
-  const [currentIndex, setCurrentIndex] = useState(stateInitial()); 
-  const [currentPrice, setCurrentPrice] = useState(precios[stateInitial()]); 
+  const setTotal = useFranquisia((state) => state.setTotal);
+  const setModo = useFranquisia((state) => state.setModo);
+  const setIndex = useFranquisia((state) => state.setIndex);
+
+  const [currentIndex, setCurrentIndex] = useState(stateInitial());
+  const [currentPrice, setCurrentPrice] = useState(precios[stateInitial()]);
   const [increasePrice, setIncreasePrice] = useState(1);
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
+  const [totalAmount, setTotalAmount] = useState(0);
+
+
 
   const iva = 3420000;
   const descuento = 0;
@@ -33,7 +40,7 @@ export const Franquisia = () => {
 
   const handleSlide = (swiper) => {
     setCurrentIndex(swiper.activeIndex);
-    setCurrentPrice(precios[swiper.activeIndex] * increasePrice); 
+    setCurrentPrice(precios[swiper.activeIndex] * increasePrice);
   };
 
   const incrementValues = [5000000, 8000000, 18000000];
@@ -43,7 +50,7 @@ export const Franquisia = () => {
 
     const newIncreasePrice = increasePrice - 1;
     const newPrice = currentPrice - precios[currentIndex];
-    
+
     setIncreasePrice(newIncreasePrice);
     setCurrentPrice(newPrice);
     setLoading(false);
@@ -54,14 +61,13 @@ export const Franquisia = () => {
 
     const newIncreasePrice = increasePrice + 1;
     const newPrice = currentPrice + precios[currentIndex];
-    
+
     setIncreasePrice(newIncreasePrice);
     setCurrentPrice(newPrice);
     setLoading(false);
   };
 
   const getFranquiciaName = (price) => {
-
     if (price === incrementValues[0] * increasePrice) {
       return "Lite";
     } else if (price === incrementValues[1] * increasePrice) {
@@ -71,8 +77,18 @@ export const Franquisia = () => {
     } else {
       return "";
     }
-    
   };
+  console.log(currentIndex, "currentIndex...");
+  useEffect(() => {
+    setTotalAmount(currentPrice + iva + descuento)
+    setTotal(currentPrice + iva + descuento)
+
+    setModo(getFranquiciaName(currentPrice))
+
+    setIndex(currentIndex)
+
+
+  }, [currentPrice, iva, descuento, setTotal, setModo]);
 
   return (
     <div className="mx-4">
@@ -89,7 +105,7 @@ export const Franquisia = () => {
             modules={[Pagination, Navigation]}
             className="mySwiper swiper-slide-container"
             onSlideChange={handleSlide}
-            initialSlide={currentIndex} 
+            initialSlide={currentIndex}
           >
             {images?.length > 0 &&
               images.map((item, index) => (
@@ -106,7 +122,9 @@ export const Franquisia = () => {
           </Swiper>
         </div>
         <div className="flex justify-between items-center px-8 my-8">
-          <span className="font-bold text-lg">Franquicia {getFranquiciaName(currentPrice)}</span>
+          <span className="font-bold text-lg">
+            Franquicia {getFranquiciaName(currentPrice)}
+          </span>
           <p className="font-bold text-lg">
             {`$${currentPrice?.toLocaleString("es-ES", {
               minimumFractionDigits: 0,
@@ -174,9 +192,7 @@ export const Franquisia = () => {
       <div className="pt-4 flex items-center justify-between">
         <p className="font-bold text-black text-lg">Total:</p>
         <span className="font-bold text-black text-lg">{`$${(
-          currentPrice +
-          iva +
-          descuento
+         totalAmount
         ).toLocaleString("es-ES", {
           minimumFractionDigits: 0,
           maximumFractionDigits: 0,

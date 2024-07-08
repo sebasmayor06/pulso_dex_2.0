@@ -6,6 +6,10 @@
     background: #B9CEFF
 } */
 
+body.modal-open {
+  overflow: hidden;
+}
+
 /* nosotros title */
 @keyframes bounceIn {
   0%,
@@ -225,6 +229,11 @@
   border-top-left-radius: 1rem /* 16px */;
   border-top-right-radius: 1rem /* 16px */;
   overflow: hidden; /* Oculta el desbordamiento de la imagen */
+}
+
+.mySwiper {
+  /* border-radius: 1rem; */
+  overflow: hidden;
 }
 
 .swiper-button-prev {

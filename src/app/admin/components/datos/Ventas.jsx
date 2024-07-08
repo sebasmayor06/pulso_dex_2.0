@@ -1,8 +1,12 @@
+"use client";
 import prueba from "../../../../../public/prueba/Group_1.png";
 import Image from "next/image";
+// import { LineChart, Line } from "recharts";
+import RenderLineChart from "../graficos/RenderLineChart";
+
 const Ventas = () => {
   return (
-    <div class="bg-gray-100 rounded-lg p-4 flex justify-between items-center  w-[65%]">
+    <div class="bg-gray-100 rounded-lg p-4 flex justify-between gap-4 items-center  w-full">
       <div class="flex flex-col justify-between gap-4  mb-4">
         <div>
           <h1 class="text-xl font-bold">Ventas y costos totales</h1>
@@ -13,12 +17,7 @@ const Ventas = () => {
         </div>
       </div>
       <div class="flex justify-center">
-        <Image
-          src={prueba}
-          width={500}
-          height={500}
-          alt="Picture of the author"
-        />
+        <RenderLineChart />
       </div>
     </div>
   );
