@@ -9,7 +9,7 @@ export default function Inicio({setShowModal2}) {
           <div className="w-full h-1/2 flex justify-center items-center md:ml-14 md:mb-0 mb-10 md:mt-0 mt-10">
             <span className="text-4xl md:text-7xl font-bold text-center md:text-left">
               Descubre el 
-              <span className='text-verdeButtom' style={{'text-shadow': '2px 2px 4px rgba(0, 0, 0, 1)'}}> potencial </span> 
+              <span className='text-verdeButtom' style={{'textShadow': '2px 2px 4px rgba(0, 0, 0, 1)'}}> potencial </span> 
               del Comercio electrónico.
             </span>
           </div>
